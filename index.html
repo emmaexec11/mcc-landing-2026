@@ -739,6 +739,108 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
   body{padding-bottom:calc(86px + env(safe-area-inset-bottom))}
 }
 
+/* EXIT INTENT MODAL */
+.modal-backdrop{
+  position:fixed;inset:0;z-index:60;
+  background:rgba(31,27,23,0.55);
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  display:none;align-items:center;justify-content:center;
+  padding:20px;
+  animation:modal-fade .3s ease;
+}
+.modal-backdrop.visible{display:flex}
+@keyframes modal-fade{from{opacity:0}to{opacity:1}}
+.modal{
+  background:var(--bg);
+  border-radius:18px;
+  max-width:480px;width:100%;
+  position:relative;overflow:hidden;
+  box-shadow:0 30px 80px rgba(0,0,0,0.4),0 6px 16px rgba(0,0,0,0.15);
+  animation:modal-rise .35s cubic-bezier(0.16,1,0.3,1);
+}
+@keyframes modal-rise{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}
+.modal-banner{
+  background:linear-gradient(135deg,var(--forest) 0%,var(--forest-dark) 100%);
+  padding:32px 28px 24px;color:var(--cream);text-align:center;
+  position:relative;
+}
+.modal-banner::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--terra) 0%,#E8C9C0 50%,var(--terra) 100%);
+}
+.modal-close{
+  position:absolute;top:14px;right:14px;
+  width:30px;height:30px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(250,246,238,0.10);color:var(--cream);
+  font-size:18px;line-height:1;cursor:pointer;
+  border:0;transition:background .15s ease;
+}
+.modal-close:hover{background:rgba(250,246,238,0.20)}
+.modal-eyebrow{
+  font-size:11px;font-weight:700;letter-spacing:0.22em;
+  text-transform:uppercase;color:#E8C9C0;margin-bottom:10px;
+}
+.modal-h{
+  font-family:var(--serif);font-weight:400;
+  font-size:32px;line-height:1.1;letter-spacing:-0.01em;
+  color:var(--cream);margin-bottom:8px;
+}
+.modal-h em{font-style:italic;color:#E8C9C0}
+.modal-sub{
+  font-size:14px;color:rgba(250,246,238,0.78);line-height:1.5;
+}
+.modal-body{padding:28px}
+.modal-form{display:flex;flex-direction:column;gap:12px}
+.modal-input{
+  width:100%;padding:14px 16px;
+  border:1.5px solid var(--line);border-radius:8px;
+  font-family:var(--sans);font-size:15px;color:var(--ink);
+  background:#fff;outline:none;
+  transition:border-color .15s ease;
+}
+.modal-input:focus{border-color:var(--forest)}
+.modal-submit{
+  width:100%;padding:16px;
+  background:var(--terra);color:#fff;
+  font-family:var(--sans);font-weight:700;font-size:15px;
+  letter-spacing:0.04em;text-transform:uppercase;
+  border-radius:8px;cursor:pointer;
+  transition:background .15s ease,transform .15s ease;
+  box-shadow:0 4px 12px rgba(181,105,79,0.32);
+}
+.modal-submit:hover{background:var(--terra-dark);transform:translateY(-1px)}
+.modal-tiny{
+  font-size:11px;color:var(--ink-soft);text-align:center;line-height:1.5;
+  margin-top:14px;
+}
+.modal-tiny a{text-decoration:underline}
+.modal-skip{
+  display:block;margin-top:10px;text-align:center;
+  font-size:12px;color:var(--ink-soft);font-weight:500;
+  cursor:pointer;background:none;border:0;width:100%;
+}
+.modal-skip:hover{color:var(--ink)}
+
+.modal-success{
+  display:none;text-align:center;padding:20px 0;
+}
+.modal-success.visible{display:block}
+.modal-success-icon{
+  width:60px;height:60px;margin:0 auto 16px;
+  background:var(--forest);color:var(--cream);
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+}
+.modal-success h3{font-family:var(--serif);font-size:24px;color:var(--forest);margin-bottom:8px}
+.modal-success p{font-size:14px;color:var(--ink-soft);line-height:1.5}
+.modal-code{
+  display:inline-block;margin-top:14px;
+  padding:10px 16px;background:var(--cream-warm);
+  border:1.5px dashed var(--forest);border-radius:6px;
+  font-family:var(--sans);font-weight:700;font-size:18px;
+  letter-spacing:0.18em;color:var(--forest);
+}
+
 /* RECENT PURCHASE TOAST */
 .toast{
   position:fixed;bottom:104px;left:14px;z-index:35;
@@ -1370,6 +1472,35 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
   </div>
 </div>
 
+<!-- EXIT INTENT MODAL -->
+<div class="modal-backdrop" id="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-h">
+  <div class="modal">
+    <div class="modal-banner">
+      <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+      <div class="modal-eyebrow">Before you go</div>
+      <h2 class="modal-h" id="modal-h">Get an extra <em>15% off.</em></h2>
+      <p class="modal-sub">Plus first dibs on new shades, restocks, and our weekly clean-beauty notes.</p>
+    </div>
+    <div class="modal-body">
+      <form class="modal-form" id="modal-form" autocomplete="off">
+        <input type="email" class="modal-input" name="email" id="modal-email" placeholder="your@email.com" required aria-label="Your email">
+        <button type="submit" class="modal-submit">Send My 15% Off →</button>
+      </form>
+      <div class="modal-tiny">No spam. Unsubscribe in one click. <a href="https://naturallywyld.ca/policies/privacy-policy" target="_blank" rel="noopener">Privacy</a>.</div>
+      <button class="modal-skip" id="modal-skip">No thanks, I'll pay full price →</button>
+      <div class="modal-success" id="modal-success">
+        <div class="modal-success-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6,15 11,20 22,8"/></svg>
+        </div>
+        <h3>You're in!</h3>
+        <p>Use this code at checkout for 15% off:</p>
+        <div class="modal-code">WYLD15</div>
+        <p style="margin-top:12px;font-size:12px">Just sent to your inbox too.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- RECENT PURCHASE TOAST -->
 <div class="toast" id="toast">
   <div class="toast-dot"></div>
@@ -1473,6 +1604,73 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
   // First toast after 9 sec, then every 22-34 sec
   setTimeout(showToast, 9000);
   setInterval(showToast, 26000);
+
+  // EXIT-INTENT MODAL
+  var modal = document.getElementById('modal-backdrop');
+  var modalForm = document.getElementById('modal-form');
+  var modalSuccess = document.getElementById('modal-success');
+  var modalClose = document.getElementById('modal-close');
+  var modalSkip = document.getElementById('modal-skip');
+  var modalShown = false;
+
+  function shouldShowModal(){
+    try {
+      if (localStorage.getItem('wyld_modal_v1')) return false;
+    } catch(e){}
+    return !modalShown;
+  }
+  function showModal(){
+    if (!shouldShowModal()) return;
+    modalShown = true;
+    modal.classList.add('visible');
+    document.body.style.overflow = 'hidden';
+    try { localStorage.setItem('wyld_modal_v1', '1'); } catch(e){}
+  }
+  function hideModal(){
+    modal.classList.remove('visible');
+    document.body.style.overflow = '';
+  }
+  modalClose.addEventListener('click', hideModal);
+  modalSkip.addEventListener('click', hideModal);
+  modal.addEventListener('click', function(e){
+    if (e.target === modal) hideModal();
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && modal.classList.contains('visible')) hideModal();
+  });
+
+  // Exit-intent (desktop): mouse leaves through top
+  document.addEventListener('mouseout', function(e){
+    if (!e.relatedTarget && e.clientY < 10) showModal();
+  });
+
+  // Time-based fallback (mobile + desktop): 45s on page without scrolling past 70%
+  setTimeout(function(){
+    var scrolled = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
+    if (scrolled < 0.7) showModal();
+  }, 45000);
+
+  // Quick exit on mobile — when scroll velocity is rapidly back to top
+  var lastY = 0, fastUpCount = 0;
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY;
+    if (y < lastY - 200) fastUpCount++; else fastUpCount = 0;
+    if (fastUpCount >= 2 && y < 200) showModal();
+    lastY = y;
+  });
+
+  // Form submit (placeholder — Klaviyo or Shopify Forms integration)
+  modalForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var email = document.getElementById('modal-email').value;
+    if (!email) return;
+    // TODO: POST to Klaviyo list / Shopify customer email endpoint
+    // fetch('https://manage.kmail-lists.com/...', {method:'POST',body:new FormData(modalForm)});
+    modalForm.style.display = 'none';
+    document.querySelector('.modal-tiny').style.display = 'none';
+    modalSkip.style.display = 'none';
+    modalSuccess.classList.add('visible');
+  });
 
 })();
 </script>
