@@ -13,9 +13,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --cream:#FAF6EE;
-  --cream-warm:#F0EAD8;
-  --cream-soft:#FBF5E8;
+  --bg:#FAFAF8;
+  --bg-soft:#F6F4EE;
+  --cream:#F4ECDB;
+  --cream-warm:#EEE5D2;
+  --cream-soft:#F8F2E4;
   --forest:#2E332C;
   --forest-dark:#1F231D;
   --forest-mid:#3A4434;
@@ -26,14 +28,14 @@
   --gold:#C8A560;
   --ink:#1F1B17;
   --ink-soft:#5F574D;
-  --line:rgba(31,27,23,0.12);
+  --line:rgba(31,27,23,0.10);
   --serif:'Cormorant Garamond',Georgia,serif;
   --sans:'Inter',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{
-  background:var(--cream);color:var(--ink);
+  background:var(--bg);color:var(--ink);
   font-family:var(--sans);font-size:16px;line-height:1.55;
   -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
 }
@@ -61,7 +63,7 @@ a{color:inherit;text-decoration:none}
 /* HEADER */
 .header{
   position:sticky;top:0;z-index:30;
-  background:rgba(250,246,238,0.94);
+  background:rgba(250,250,248,0.94);
   backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
   border-bottom:1px solid var(--line);
 }
@@ -72,7 +74,9 @@ a{color:inherit;text-decoration:none}
 .brand{
   font-family:var(--serif);font-size:24px;font-weight:500;
   color:var(--forest);letter-spacing:0.005em;
+  display:inline-flex;align-items:center;gap:8px;
 }
+.brand-leaf{width:18px;height:18px;color:var(--forest);opacity:0.85}
 .header-right{
   position:absolute;right:22px;top:50%;transform:translateY(-50%);
   display:flex;align-items:center;gap:6px;
@@ -84,7 +88,7 @@ a{color:inherit;text-decoration:none}
 /* HERO */
 .hero{
   padding:48px 0 64px;
-  background:linear-gradient(180deg,var(--cream) 0%,var(--cream-soft) 100%);
+  background:linear-gradient(180deg,var(--bg) 0%,var(--bg-soft) 100%);
   position:relative;overflow:hidden;
 }
 .hero-grid{
@@ -203,7 +207,7 @@ a{color:inherit;text-decoration:none}
 
 /* TRUST BAND */
 .trust-band{
-  background:var(--cream-warm);padding:22px 0;
+  background:var(--bg-soft);padding:22px 0;
   border-top:1px solid var(--line);border-bottom:1px solid var(--line);
 }
 .trust-row{
@@ -229,7 +233,7 @@ section.s{padding:96px 0}
 @media(max-width:680px){.s-head{margin-bottom:32px}.s-head p{font-size:15px}}
 
 /* PROOF SECTION */
-.proof-wrap{background:var(--cream-warm)}
+.proof-wrap{background:var(--bg)}
 .proof-stats{
   display:grid;grid-template-columns:repeat(4,1fr);
   gap:0;margin-bottom:48px;
@@ -316,7 +320,7 @@ section.s{padding:96px 0}
 .why-text p b{color:var(--ink);font-weight:600}
 
 /* 3-IN-1 SHOWCASE */
-.threeinone-wrap{background:var(--cream-warm)}
+.threeinone-wrap{background:var(--bg-soft)}
 .tio-grid{
   display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
 }
@@ -372,7 +376,7 @@ section.s{padding:96px 0}
 
 /* OFFER SECTION */
 .offer-wrap{
-  background:linear-gradient(180deg,var(--cream-warm) 0%,var(--cream) 100%);
+  background:linear-gradient(180deg,var(--cream-warm) 0%,var(--cream-soft) 100%);
 }
 .offer-card{
   max-width:780px;margin:0 auto;
@@ -475,6 +479,37 @@ section.s{padding:96px 0}
 }
 .urgency-line::before{content:"⚡ "}
 
+/* PAYMENT TRUST ROW */
+.pay-row{
+  margin-top:18px;display:flex;align-items:center;justify-content:center;
+  flex-wrap:wrap;gap:6px 12px;
+  padding-top:18px;border-top:1px solid var(--line);
+}
+.pay-row-label{
+  font-size:10px;color:var(--ink-soft);
+  letter-spacing:0.16em;text-transform:uppercase;font-weight:600;
+  width:100%;text-align:center;margin-bottom:4px;
+}
+.pay-badge{
+  background:#fff;border:1px solid var(--line);
+  border-radius:6px;padding:6px 10px;
+  font-size:11px;font-weight:700;color:var(--ink-soft);
+  letter-spacing:0.04em;display:inline-flex;align-items:center;gap:5px;
+  min-height:28px;
+}
+.pay-badge svg{width:14px;height:14px}
+.pay-secure{color:var(--forest);border-color:rgba(46,51,44,0.20)}
+
+/* JUDGE BADGE near reviews */
+.judge-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;border:1px solid var(--line);border-radius:8px;
+  padding:8px 14px;margin-left:auto;margin-right:auto;
+  font-size:12px;color:var(--ink-soft);font-weight:500;
+}
+.judge-badge b{color:var(--forest);font-weight:600}
+.judge-badge .stars{color:var(--terra);font-size:13px;letter-spacing:1px}
+
 /* FOUNDER NOTE INLINE */
 .founder-inline{
   margin-top:60px;display:grid;grid-template-columns:auto 1fr;gap:24px;
@@ -570,7 +605,7 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
 /* STICKY MOBILE CTA */
 .mobile-cta{
   display:none;position:fixed;left:0;right:0;bottom:0;z-index:40;
-  background:rgba(250,246,238,0.97);
+  background:rgba(250,250,248,0.97);
   backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
   padding:12px 16px calc(12px + env(safe-area-inset-bottom));
   border-top:1px solid var(--line);
@@ -600,7 +635,7 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
 /* RECENT PURCHASE TOAST */
 .toast{
   position:fixed;bottom:104px;left:14px;z-index:35;
-  background:rgba(250,246,238,0.97);
+  background:rgba(250,250,248,0.97);
   backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
   border:1px solid var(--line);border-radius:10px;
   padding:12px 14px;
@@ -657,7 +692,10 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
 <!-- HEADER -->
 <header class="header">
   <div class="header-inner">
-    <div class="brand">Naturally Wyld</div>
+    <div class="brand">
+      <svg class="brand-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3c-7.5 0-13 5-13 12 0 1.5.3 3 .8 4.3"/><path d="M4 19c0-7 5-13 13-13"/></svg>
+      Naturally Wyld
+    </div>
     <div class="header-right">
       <span class="stars">★★★★★</span>
       <span>4.9 · 436+ reviews</span>
@@ -723,6 +761,7 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
       <h2>The clean-beauty switch <em>everyone's making.</em></h2>
       <p>5 years. 12,000+ orders. Sold out 7 times. Here's what people actually say.</p>
     </div>
+    <div style="text-align:center;margin-bottom:24px"><span class="judge-badge"><span class="stars">★★★★★</span> <b>4.9 / 5</b> · 436+ verified reviews · powered by Judge.me</span></div>
     <div class="proof-stats">
       <div class="proof-stat">
         <div class="proof-num">12,000+</div>
@@ -947,6 +986,16 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
         </a>
         <div class="cta-line" id="cta-line">✓ Free shipping · ✓ 30-day guarantee · <b>3 tins for $30</b></div>
         <div class="urgency-line">Last batch sold out in 11 days. Next batch ships in 6 weeks.</div>
+        <div class="pay-row">
+          <span class="pay-row-label">Secure checkout · multiple payment options</span>
+          <span class="pay-badge pay-secure"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="12" height="9" rx="1.5"/><path d="M7 9V6a3 3 0 0 1 6 0v3"/></svg> Shopify Secure</span>
+          <span class="pay-badge">Shop Pay</span>
+          <span class="pay-badge">Apple Pay</span>
+          <span class="pay-badge">Google Pay</span>
+          <span class="pay-badge">Visa</span>
+          <span class="pay-badge">Mastercard</span>
+          <span class="pay-badge">AMEX</span>
+        </div>
       </div>
 
       <!-- FOUNDER NOTE INLINE -->
