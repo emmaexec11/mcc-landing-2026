@@ -677,6 +677,47 @@ footer .footer-row{
 footer a:hover{color:var(--cream)}
 footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
 
+/* STICKY DESKTOP CTA — slim bottom bar, desktop only */
+.desktop-cta{
+  display:none;
+  position:fixed;left:0;right:0;bottom:0;z-index:40;
+  background:rgba(250,250,248,0.97);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-top:1px solid var(--line);
+  box-shadow:0 -6px 22px rgba(31,27,23,0.10);
+  transform:translateY(110%);
+  transition:transform .35s cubic-bezier(0.16,1,0.3,1);
+  padding:12px 24px;
+}
+.desktop-cta.visible{transform:translateY(0)}
+.desktop-cta-inner{
+  max-width:1100px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+}
+.desktop-cta-left{display:flex;align-items:center;gap:16px}
+.desktop-cta-img{
+  width:46px;height:46px;border-radius:8px;overflow:hidden;
+  background:var(--cream-warm);flex-shrink:0;
+}
+.desktop-cta-img img{width:100%;height:100%;object-fit:cover}
+.desktop-cta-meta{display:flex;flex-direction:column;gap:2px}
+.desktop-cta-title{
+  font-family:var(--serif);font-size:17px;font-weight:500;color:var(--forest);
+  line-height:1.15;
+}
+.desktop-cta-stars{font-size:12px;color:var(--ink-soft)}
+.desktop-cta-stars .stars{color:var(--terra);font-size:12px;letter-spacing:1px;margin-right:5px}
+.desktop-cta-right{display:flex;align-items:center;gap:18px}
+.desktop-cta-price{display:flex;align-items:baseline;gap:8px}
+.desktop-cta-price b{font-family:var(--serif);font-size:24px;font-weight:500;color:var(--forest)}
+.desktop-cta-price s{color:var(--ink-soft);font-size:13px}
+.desktop-cta .cta-btn{
+  padding:14px 26px;font-size:13px;min-height:50px;width:auto;
+  letter-spacing:0.06em;
+}
+@media(max-width:900px){.desktop-cta{display:none !important}}
+@media(min-width:901px){.desktop-cta{display:block}}
+
 /* STICKY MOBILE CTA */
 .mobile-cta{
   display:none;position:fixed;left:0;right:0;bottom:0;z-index:40;
@@ -933,7 +974,7 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
       <div class="hero-media">
         <div class="hero-badge">$90 value · $30 today</div>
         <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Multi_colour_cream_bundle_sharpened.jpg?v=1756846735" alt="Naturally Wyld Multi-Colour Cream Starter Set — Fallen Leaves, Hazelnut, Raspberry Kiss" width="800" height="800" fetchpriority="high">
-        <div class="hero-badge hero-badge-2">★ Sold out 7x</div>
+        <div class="hero-badge hero-badge-2">★ 4.9 · 436+ reviews</div>
       </div>
     </div>
   </div>
@@ -1513,6 +1554,30 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
   </div>
 </footer>
 
+<!-- STICKY DESKTOP CTA -->
+<div class="desktop-cta" id="desktop-cta" aria-hidden="true">
+  <div class="desktop-cta-inner">
+    <div class="desktop-cta-left">
+      <div class="desktop-cta-img">
+        <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Multi_colour_cream_bundle_sharpened.jpg?v=1756846735" alt="Multi-Colour Cream Starter Set" loading="lazy">
+      </div>
+      <div class="desktop-cta-meta">
+        <div class="desktop-cta-title">Multi-Colour Cream Starter Set</div>
+        <div class="desktop-cta-stars"><span class="stars">★★★★★</span> 4.9 · 436+ reviews · sold out 7×</div>
+      </div>
+    </div>
+    <div class="desktop-cta-right">
+      <div class="desktop-cta-price">
+        <b id="desktop-cta-price">$30</b>
+        <s>$90</s>
+      </div>
+      <a class="cta-btn" id="cta-desktop" href="https://naturallywyld.ca/cart/46636732252417:1?discount=FREESHIPMC&amp;checkout">
+        <span id="cta-desktop-text">Get My Starter Set — $30</span><span class="cta-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+
 <!-- STICKY MOBILE CTA -->
 <div class="mobile-cta">
   <div class="mobile-cta-inner">
@@ -1584,11 +1649,15 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
 
   function updateCTAs(){
     var url = checkoutURL(active);
-    ['cta-hero','cta-offer','cta-final','cta-mobile'].forEach(function(id){
+    ['cta-hero','cta-offer','cta-final','cta-mobile','cta-desktop'].forEach(function(id){
       var el = document.getElementById(id); if (el) el.href = url;
     });
     document.getElementById('cta-offer-text').textContent = active ? 'Claim All 5 — $50' : 'Claim My Starter Set — $30';
     document.getElementById('cta-final-text').textContent = active ? 'Claim All 5 Shades — $50' : 'Claim My Starter Set — $30';
+    var deskText = document.getElementById('cta-desktop-text');
+    if (deskText) deskText.textContent = active ? 'Get All 5 — $50' : 'Get My Starter Set — $30';
+    var deskPrice = document.getElementById('desktop-cta-price');
+    if (deskPrice) deskPrice.textContent = active ? '$50' : '$30';
     document.getElementById('mobile-price').textContent = active ? '$50' : '$30';
     document.getElementById('mobile-sub').textContent = active ? '5 tins · free ship' : '3 tins · free ship';
     document.getElementById('cta-line').innerHTML = active
@@ -1622,6 +1691,37 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
       el.classList.add('reveal');
       revealIO.observe(el);
     });
+  }
+
+  // STICKY DESKTOP CTA — show after hero CTA out of view, hide at final CTA
+  if ('IntersectionObserver' in window){
+    var deskCta = document.getElementById('desktop-cta');
+    var heroCta = document.getElementById('cta-hero');
+    var finalSection = document.querySelector('section.final');
+    var heroOut = false, finalIn = false;
+    function syncDesktopCta(){
+      if (heroOut && !finalIn){
+        deskCta.classList.add('visible');
+        deskCta.setAttribute('aria-hidden','false');
+      } else {
+        deskCta.classList.remove('visible');
+        deskCta.setAttribute('aria-hidden','true');
+      }
+    }
+    new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        heroOut = !e.isIntersecting;
+        syncDesktopCta();
+      });
+    }, {threshold:0}).observe(heroCta);
+    if (finalSection){
+      new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          finalIn = e.isIntersecting;
+          syncDesktopCta();
+        });
+      }, {threshold:0.05}).observe(finalSection);
+    }
   }
 
   // VIDEO LAZY PLAY
@@ -1792,25 +1892,39 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
     if (e.key === 'Escape' && modal.classList.contains('visible')) hideModal();
   });
 
-  // Exit-intent (desktop): mouse leaves through top
+  // TRUE EXIT INTENT — desktop: mouse leaves through top
   document.addEventListener('mouseout', function(e){
     if (!e.relatedTarget && e.clientY < 10) showModal();
   });
 
-  // Time-based fallback (mobile + desktop): 45s on page without scrolling past 70%
-  setTimeout(function(){
-    var scrolled = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
-    if (scrolled < 0.7) showModal();
-  }, 45000);
-
-  // Quick exit on mobile — when scroll velocity is rapidly back to top
-  var lastY = 0, fastUpCount = 0;
-  window.addEventListener('scroll', function(){
-    var y = window.scrollY;
-    if (y < lastY - 200) fastUpCount++; else fastUpCount = 0;
-    if (fastUpCount >= 2 && y < 200) showModal();
-    lastY = y;
+  // TRUE EXIT INTENT — mobile: tab gets backgrounded
+  // Fires when user switches apps, locks phone, hits home button — real abandonment signal.
+  // Only counts if they've spent some real time on the page (>15s) to avoid firing on accidental swipes.
+  var pageLoadAt = Date.now();
+  document.addEventListener('visibilitychange', function(){
+    if (document.visibilityState === 'hidden'
+        && (Date.now() - pageLoadAt) > 15000
+        && window.innerWidth < 900){
+      // Mobile only — desktop already has mouse-leave signal
+      showModal();
+    }
   });
+
+  // SCROLL-BACK-ABOVE-OFFER — only fires if user reached the offer card then scrolled back above it.
+  // True "I was deciding, now I'm leaving" signal. Replaces the more aggressive scroll-back-to-top.
+  var reachedOffer = false;
+  var offerEl = document.querySelector('#offer');
+  if ('IntersectionObserver' in window && offerEl){
+    new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) reachedOffer = true;
+        else if (reachedOffer && e.boundingClientRect.top > 0){
+          // Offer is BELOW viewport again = user scrolled back above it
+          showModal();
+        }
+      });
+    }, {threshold:0.5}).observe(offerEl);
+  }
 
   // Form submit (placeholder — Klaviyo or Shopify Forms integration)
   modalForm.addEventListener('submit', function(e){
