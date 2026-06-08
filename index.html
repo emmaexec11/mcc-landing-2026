@@ -195,6 +195,28 @@ a{color:inherit;text-decoration:none}
 .hero-stars b{font-weight:700;color:var(--forest)}
 .hero-stars span{color:var(--ink-soft)}
 
+/* HERO CUSTOMER QUOTE */
+.hero-quote{
+  display:flex;gap:14px;align-items:flex-start;
+  background:rgba(196,155,151,0.10);
+  border-left:3px solid var(--terra);
+  padding:16px 18px;border-radius:0 10px 10px 0;
+  margin:0 0 22px;max-width:500px;
+}
+.hero-quote-avatar{
+  flex-shrink:0;width:44px;height:44px;border-radius:50%;
+  overflow:hidden;background:var(--cream-warm);
+  border:2px solid #fff;box-shadow:0 2px 6px rgba(31,27,23,0.1);
+}
+.hero-quote-avatar img{width:100%;height:100%;object-fit:cover}
+.hero-quote-body{flex:1}
+.hero-quote-stars{color:var(--terra);font-size:12px;letter-spacing:1px;margin-bottom:4px;display:block}
+.hero-quote-text{
+  font-family:var(--serif);font-style:italic;font-size:15px;
+  color:var(--ink);line-height:1.4;margin-bottom:6px;
+}
+.hero-quote-author{font-size:12px;color:var(--ink-soft);font-weight:600}
+
 .price-block{
   display:flex;align-items:baseline;gap:14px;margin-bottom:24px;
 }
@@ -992,6 +1014,16 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
           <b>4.9/5</b>
           <span>· 436+ verified reviews</span>
         </div>
+        <div class="hero-quote">
+          <div class="hero-quote-avatar">
+            <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Multi_Testimonial.png" alt="Jennifer T., verified customer" loading="lazy">
+          </div>
+          <div class="hero-quote-body">
+            <span class="hero-quote-stars">★★★★★</span>
+            <p class="hero-quote-text">"I've tried so many 'clean' brands. This is the first one that actually stays on and looks natural."</p>
+            <span class="hero-quote-author">— Jennifer T. · Verified buyer</span>
+          </div>
+        </div>
         <div class="price-block">
           <span class="price-now">$30</span>
           <span class="price-was">$90 value</span>
@@ -1207,6 +1239,35 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
         </a>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- HOW TO USE — 3 steps -->
+<section class="s" style="background:var(--bg)">
+  <div class="container">
+    <div class="s-head">
+      <span class="eyebrow">Your whole face · 30 seconds</span>
+      <h2>How it <em>works.</em></h2>
+      <p>Open the tin, swipe with a finger, blend. That's the whole routine.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:980px;margin:0 auto">
+      <div style="text-align:center">
+        <div style="width:80px;height:80px;border-radius:50%;background:var(--cream-warm);border:2px solid var(--forest);color:var(--forest);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:36px;font-weight:500;margin:0 auto 18px">1</div>
+        <h3 style="font-family:var(--serif);font-size:24px;font-weight:500;color:var(--forest);margin-bottom:8px">Open a tin</h3>
+        <p style="font-size:15px;color:var(--ink-soft);line-height:1.55">Pick any shade. Twist the lid off. (You get all 3 so no decisions required.)</p>
+      </div>
+      <div style="text-align:center">
+        <div style="width:80px;height:80px;border-radius:50%;background:var(--cream-warm);border:2px solid var(--forest);color:var(--forest);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:36px;font-weight:500;margin:0 auto 18px">2</div>
+        <h3 style="font-family:var(--serif);font-size:24px;font-weight:500;color:var(--forest);margin-bottom:8px">Swipe &amp; blend</h3>
+        <p style="font-size:15px;color:var(--ink-soft);line-height:1.55">Finger or beauty blender. Dab on lips, cheeks, and eyes. Blend with whatever's nearest.</p>
+      </div>
+      <div style="text-align:center">
+        <div style="width:80px;height:80px;border-radius:50%;background:var(--cream-warm);border:2px solid var(--forest);color:var(--forest);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:36px;font-weight:500;margin:0 auto 18px">3</div>
+        <h3 style="font-family:var(--serif);font-size:24px;font-weight:500;color:var(--forest);margin-bottom:8px">Glow all day</h3>
+        <p style="font-size:15px;color:var(--ink-soft);line-height:1.55">4-6 hours of natural colour with a soft stain that lingers even longer.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px;font-family:var(--serif);font-style:italic;font-size:22px;color:var(--forest)">"Honestly the easiest morning routine I've ever had."</div>
   </div>
 </section>
 
