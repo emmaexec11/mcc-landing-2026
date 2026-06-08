@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wyld Palette Comparison — Rose vs Terracotta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:#1F231D;
+  color:#FAF6EE;
+  font-family:'Inter',sans-serif;
+  font-size:14px;line-height:1.55;
+  padding:32px 16px;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+}
+.hdr{max-width:1280px;margin:0 auto 32px;text-align:center}
+.hdr h1{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:500;margin-bottom:8px;letter-spacing:-0.01em}
+.hdr p{color:rgba(250,246,238,0.6);font-size:14px}
+
+.compare{
+  max-width:1280px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr;gap:24px;
+}
+@media(max-width:900px){.compare{grid-template-columns:1fr}}
+
+.col{
+  background:#FAF6EE;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,0.35);
+  position:relative;
+}
+.col-tag{
+  background:#2E332C;color:#FAF6EE;
+  padding:14px 22px;
+  display:flex;align-items:center;justify-content:space-between;
+  font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;
+}
+.col-tag .verdict{font-weight:500;color:#E8C9C0}
+
+/* Sample hero — shared layout */
+.sample{padding:36px 28px;text-align:left;background:inherit}
+.sample-promo{
+  background:#2E332C;color:#FAF6EE;
+  margin:-36px -28px 28px;padding:9px 14px;
+  font-size:11px;font-weight:600;letter-spacing:0.08em;text-align:center;
+}
+.sample-brand{
+  font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;
+  color:#2E332C;text-align:center;margin-bottom:28px;padding-bottom:14px;
+  border-bottom:1px solid rgba(31,27,23,0.10);
+}
+.sample-stars{
+  font-size:11px;color:#5F574D;font-weight:500;margin-bottom:14px;
+}
+.sample-stars b{color:#1F1B17;font-weight:700}
+.sample-h{
+  font-family:'Cormorant Garamond',serif;font-weight:400;
+  font-size:34px;line-height:1.05;color:#2E332C;
+  margin-bottom:12px;letter-spacing:-0.01em;
+}
+.sample-h em{font-style:italic}
+.sample-sub{
+  font-size:13px;color:#1F1B17;margin-bottom:14px;font-weight:500;
+}
+.sample-meta{font-size:11px;color:#5F574D;margin-bottom:18px}
+.sample-price{
+  display:flex;align-items:baseline;gap:10px;margin-bottom:18px;
+}
+.sample-price b{
+  font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;color:#2E332C;
+}
+.sample-price s{color:#5F574D;font-size:14px}
+
+.sample-cta{
+  display:block;width:100%;text-align:center;
+  font-weight:700;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;
+  padding:14px;border-radius:6px;color:#fff;
+  text-decoration:none;
+  box-shadow:0 4px 12px rgba(0,0,0,0.12);
+}
+.sample-trust{margin-top:14px;font-size:11px;color:#5F574D}
+.sample-trust span{margin-right:14px}
+
+.sample-card{
+  margin-top:18px;
+  padding:16px;
+  border-radius:10px;
+  font-size:11px;
+}
+.sample-card b{font-size:13px}
+
+/* ROSE PALETTE (current site) */
+.col-rose .sample-h em{color:#C49B97}
+.col-rose .sample-cta{background:#C49B97}
+.col-rose .sample-card{background:#F8E5E0;border:1px solid rgba(196,155,151,0.3)}
+.col-rose .sample-badge{background:#C49B97;color:#fff}
+
+/* TERRACOTTA PALETTE (new LP) */
+.col-terra .sample-h em{color:#B5694F}
+.col-terra .sample-cta{background:#B5694F}
+.col-terra .sample-card{background:#F4ECDB;border:1px solid rgba(181,105,79,0.3)}
+.col-terra .sample-badge{background:#B5694F;color:#fff}
+
+.sample-badge{
+  display:inline-block;padding:5px 10px;border-radius:4px;
+  font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;
+  margin-bottom:14px;
+}
+
+/* SWATCH ROW */
+.swatches{
+  display:flex;gap:8px;padding:0 28px 24px;
+}
+.swatch{
+  flex:1;height:34px;border-radius:6px;
+  display:flex;align-items:flex-end;justify-content:center;
+  padding-bottom:4px;
+  font-size:9px;letter-spacing:0.08em;font-weight:600;
+  text-transform:uppercase;color:#fff;
+  text-shadow:0 1px 2px rgba(0,0,0,0.4);
+  position:relative;
+}
+
+/* PRODUCT GRID — shows brand range */
+.range-row{
+  display:flex;gap:10px;padding:0 28px 24px;
+}
+.range-card{
+  flex:1;text-align:center;padding:14px 6px;border-radius:8px;
+}
+.range-card div{
+  font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:500;color:#2E332C;
+  margin-bottom:2px;
+}
+.range-card small{font-size:9px;color:#5F574D;letter-spacing:0.06em;text-transform:uppercase}
+
+.col-rose .range-card{background:#F8E5E0}
+.col-terra .range-card{background:#F4ECDB}
+
+/* VERDICT BLOCK */
+.verdict-block{
+  padding:18px 28px;
+  background:#fff;
+  border-top:1px solid rgba(31,27,23,0.1);
+  font-size:12px;line-height:1.55;color:#1F1B17;
+}
+.verdict-block b{color:#2E332C}
+.verdict-pros{color:#2C7A3D;font-weight:600;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:6px}
+.verdict-cons{color:#9D5740;font-weight:600;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;margin:10px 0 6px}
+.verdict-block ul{padding-left:18px;font-size:12px;line-height:1.5}
+.verdict-block li{margin-bottom:3px}
+
+.recommend{
+  max-width:1280px;margin:32px auto 0;
+  background:rgba(250,246,238,0.06);
+  border:1px solid rgba(250,246,238,0.14);
+  border-radius:14px;padding:24px 28px;
+  font-size:14px;line-height:1.6;color:rgba(250,246,238,0.92);
+}
+.recommend h2{
+  font-family:'Cormorant Garamond',serif;font-weight:500;
+  font-size:24px;margin-bottom:10px;color:#FAF6EE;
+}
+.recommend b{color:#FAF6EE}
+.recommend em{color:#E8C9C0;font-style:italic}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <h1>Wyld palette comparison</h1>
+  <p>Same content, different accent. Pick what feels right for your brand.</p>
+</div>
+
+<div class="compare">
+
+  <!-- ROSE PALETTE -->
+  <div class="col col-rose">
+    <div class="col-tag">
+      <span>OPTION A — KEEP ROSE</span>
+      <span class="verdict">Current site palette</span>
+    </div>
+    <div class="sample">
+      <div class="sample-promo">★ SOLD OUT 7 TIMES · Free Canada shipping</div>
+      <div class="sample-brand">Naturally Wyld</div>
+      <span class="sample-badge">Sold out 7×</span>
+      <h2 class="sample-h">Real makeup.<br>Made with <em>real food.</em></h2>
+      <p class="sample-sub">3 best-selling shades for $30 — coloured with real fruit, not chemicals.</p>
+      <p class="sample-meta">Lips, cheeks &amp; eyes. Hand-poured in Kelowna.</p>
+      <p class="sample-stars">★★★★★ <b>4.9</b> · 436+ reviews</p>
+      <div class="sample-price"><b>$30</b><s>$90 value</s></div>
+      <a class="sample-cta" href="#">Get My Starter Set — $30</a>
+      <p class="sample-trust"><span>✓ Free ship</span><span>✓ 30-day refund</span></p>
+      <div class="sample-card">
+        <b>Bestsellers across the brand</b><br>
+        Beauty · Wellness · Oral · Skin
+      </div>
+    </div>
+    <div class="swatches">
+      <div class="swatch" style="background:#FAF6EE;color:#2E332C;text-shadow:none">Cream</div>
+      <div class="swatch" style="background:#2E332C">Forest</div>
+      <div class="swatch" style="background:#C49B97">Rose</div>
+      <div class="swatch" style="background:#B5694F">Terra</div>
+    </div>
+    <div class="range-row">
+      <div class="range-card"><div>MCC</div><small>Makeup</small></div>
+      <div class="range-card"><div>OOO</div><small>Wellness</small></div>
+      <div class="range-card"><div>Deo</div><small>Daily</small></div>
+      <div class="range-card"><div>TP</div><small>Oral</small></div>
+    </div>
+    <div class="verdict-block">
+      <div class="verdict-pros">Why it works</div>
+      <ul>
+        <li>Distinctly clean-beauty brand identity</li>
+        <li>Feminine warmth — soft, intentional, premium</li>
+        <li>4-color palette feels rich + boutique</li>
+        <li>Memorable — few brands run rose well</li>
+      </ul>
+      <div class="verdict-cons">Where it costs you</div>
+      <ul>
+        <li>Reads as "for women" — men buying deo bounce</li>
+        <li>Family buyers (toothpaste, oils) feel mismatch</li>
+        <li>Cold ad traffic skews lower trust on first impression</li>
+        <li>Hard to expand into outdoor / wellness / men's lines</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- TERRACOTTA PALETTE -->
+  <div class="col col-terra">
+    <div class="col-tag">
+      <span>OPTION B — DROP ROSE</span>
+      <span class="verdict" style="color:#E8C9C0">New LP palette</span>
+    </div>
+    <div class="sample">
+      <div class="sample-promo">★ SOLD OUT 7 TIMES · Free Canada shipping</div>
+      <div class="sample-brand">Naturally Wyld</div>
+      <span class="sample-badge">Sold out 7×</span>
+      <h2 class="sample-h">Real makeup.<br>Made with <em>real food.</em></h2>
+      <p class="sample-sub">3 best-selling shades for $30 — coloured with real fruit, not chemicals.</p>
+      <p class="sample-meta">Lips, cheeks &amp; eyes. Hand-poured in Kelowna.</p>
+      <p class="sample-stars">★★★★★ <b>4.9</b> · 436+ reviews</p>
+      <div class="sample-price"><b>$30</b><s>$90 value</s></div>
+      <a class="sample-cta" href="#">Get My Starter Set — $30</a>
+      <p class="sample-trust"><span>✓ Free ship</span><span>✓ 30-day refund</span></p>
+      <div class="sample-card">
+        <b>Bestsellers across the brand</b><br>
+        Beauty · Wellness · Oral · Skin
+      </div>
+    </div>
+    <div class="swatches">
+      <div class="swatch" style="background:#FAFAF8;color:#2E332C;text-shadow:none">Off-white</div>
+      <div class="swatch" style="background:#F4ECDB;color:#2E332C;text-shadow:none">Cream</div>
+      <div class="swatch" style="background:#2E332C">Forest</div>
+      <div class="swatch" style="background:#B5694F">Terra</div>
+    </div>
+    <div class="range-row">
+      <div class="range-card"><div>MCC</div><small>Makeup</small></div>
+      <div class="range-card"><div>OOO</div><small>Wellness</small></div>
+      <div class="range-card"><div>Deo</div><small>Daily</small></div>
+      <div class="range-card"><div>TP</div><small>Oral</small></div>
+    </div>
+    <div class="verdict-block">
+      <div class="verdict-pros">Why it works</div>
+      <ul>
+        <li>Universal — works for makeup AND oils AND deo AND TP</li>
+        <li>Reads as "serious clean wellness" not "women-only"</li>
+        <li>Future-proof for expansion (men's, outdoor, kids)</li>
+        <li>Higher cold-traffic conversion (white-base trust signal)</li>
+        <li>Cleaner CTA contrast — terracotta pops on off-white</li>
+      </ul>
+      <div class="verdict-cons">Where it costs you</div>
+      <ul>
+        <li>Slightly less "boutique" feel on the homepage</li>
+        <li>Loses some "feminine softness" rose brings</li>
+        <li>Risk of looking like every other clean DTC brand</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<div class="recommend">
+  <h2>My take, given your actual product mix</h2>
+  <p>You're <b>60-70% wellness / 30-40% beauty</b> — ozonated oils, deodorant, toothpaste, makeup. Rose signals 90% beauty. That mismatch is costing you on every non-makeup product page.</p>
+  <p style="margin-top:14px"><b>Recommended: OPTION B</b> across the brand. Use the LP palette site-wide. Keep <em>dusty rose as a tiny accent color reserved for makeup-only product pages</em> — so MCC and MYCO pages get a soft rose touch (category color), but the homepage, deo pages, toothpaste pages, oils pages all live in the cleaner off-white + forest + terracotta system.</p>
+  <p style="margin-top:14px">This is exactly how Aesop does it — neutral base brand-wide, category accents per product family. Lets you have both: universal trust + makeup-category warmth.</p>
+</div>
+
+</body>
+</html>
