@@ -482,7 +482,7 @@ section.s{padding:96px 0}
 /* PAYMENT TRUST ROW */
 .pay-row{
   margin-top:18px;display:flex;align-items:center;justify-content:center;
-  flex-wrap:wrap;gap:6px 12px;
+  flex-wrap:wrap;gap:8px;
   padding-top:18px;border-top:1px solid var(--line);
 }
 .pay-row-label{
@@ -490,15 +490,19 @@ section.s{padding:96px 0}
   letter-spacing:0.16em;text-transform:uppercase;font-weight:600;
   width:100%;text-align:center;margin-bottom:4px;
 }
-.pay-badge{
-  background:#fff;border:1px solid var(--line);
-  border-radius:6px;padding:6px 10px;
-  font-size:11px;font-weight:700;color:var(--ink-soft);
-  letter-spacing:0.04em;display:inline-flex;align-items:center;gap:5px;
-  min-height:28px;
+.pay-logo{
+  height:24px;width:auto;
+  display:inline-flex;align-items:center;
+  filter:saturate(0.85);
 }
-.pay-badge svg{width:14px;height:14px}
-.pay-secure{color:var(--forest);border-color:rgba(46,51,44,0.20)}
+.pay-secure-badge{
+  background:var(--forest);color:var(--cream-soft);
+  padding:6px 10px;border-radius:5px;
+  font-size:10px;font-weight:700;letter-spacing:0.10em;
+  text-transform:uppercase;display:inline-flex;align-items:center;gap:5px;
+  min-height:24px;
+}
+.pay-secure-badge svg{width:12px;height:12px}
 
 /* JUDGE BADGE near reviews */
 .judge-badge{
@@ -783,6 +787,27 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
     <div class="review-grid">
       <div class="review-card">
         <div class="stars">★★★★★</div>
+        <p class="review-quote">Okay but why did no one tell me this would replace like 3 products in one?? I use it on my cheeks, lips, and even my lids. My makeup bag has literally never been this empty and my face has never looked this good.</p>
+        <div class="review-author">
+          <b>Mya</b><span class="review-verified">✓ Verified buyer</span>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-quote">This just makes me feel pretty without all the effort. I swipe it on in the morning and look awake and put together, even if I barely slept. The Raspberry Kiss is my new personality.</p>
+        <div class="review-author">
+          <b>Sarah</b><span class="review-verified">✓ Verified buyer</span>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-quote">LIFE-CHANGING for pregnancy-safe makeup. I felt like I had nothing safe to put on my face and this saved me. Beautiful colour, beautiful ingredients, beautiful brand.</p>
+        <div class="review-author">
+          <b>Shaye</b><span class="review-verified">✓ Verified buyer</span>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
         <p class="review-quote">Love this product! The colours are beautiful, natural-looking, and easy to apply.</p>
         <div class="review-author">
           <b>Sana</b><span class="review-verified">✓ Verified buyer</span>
@@ -797,9 +822,9 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
       </div>
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <p class="review-quote">The colours are perfect for contouring, blush, eyes and cheeks. I love it!</p>
+        <p class="review-quote">Been slowly swapping all my makeup for cleaner stuff and this one's def staying. I love that it's made with actual fruit and oils instead of weird chemicals. Lasts way longer than I expected too.</p>
         <div class="review-author">
-          <b>Laura</b><span class="review-verified">✓ Verified buyer</span>
+          <b>Brenna</b><span class="review-verified">✓ Verified buyer</span>
         </div>
       </div>
     </div>
@@ -840,6 +865,93 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
             <p>Recyclable aluminium tin, no plastic tubes. Made by hand in our Kelowna lab. <b>The only Canadian brand doing this.</b></p>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHADE SWATCH CHART -->
+<section class="s" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="s-head">
+      <span class="eyebrow">The 3 shades you get</span>
+      <h2>3 universally <em>flattering</em> tones.</h2>
+      <p>Picked because they look beautiful on every skin tone — warm, cool, neutral, deep, fair. You can't pick wrong.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:980px;margin:0 auto">
+      <div style="background:#fff;border-radius:14px;padding:24px 20px;text-align:center;box-shadow:0 4px 12px rgba(31,27,23,0.04)">
+        <div style="width:120px;height:120px;border-radius:50%;margin:0 auto 18px;background:radial-gradient(circle at 35% 30%, #D86D8C 0%, #C9587A 50%, #A03B5C 100%);box-shadow:inset 0 -10px 22px rgba(0,0,0,0.25),inset 0 6px 14px rgba(255,255,255,0.18),0 4px 12px rgba(31,27,23,0.12)"></div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:24px;font-weight:500;color:var(--forest);margin-bottom:4px">Raspberry Kiss</div>
+        <div style="font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:10px">Berry pink</div>
+        <p style="font-size:13px;color:var(--ink-soft);line-height:1.5">Juicy. Playful. The "fresh-faced flush" everyone gets compliments on.</p>
+      </div>
+      <div style="background:#fff;border-radius:14px;padding:24px 20px;text-align:center;box-shadow:0 4px 12px rgba(31,27,23,0.04)">
+        <div style="width:120px;height:120px;border-radius:50%;margin:0 auto 18px;background:radial-gradient(circle at 35% 30%, #C99774 0%, #A87654 50%, #7A4F35 100%);box-shadow:inset 0 -10px 22px rgba(0,0,0,0.25),inset 0 6px 14px rgba(255,255,255,0.18),0 4px 12px rgba(31,27,23,0.12)"></div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:24px;font-weight:500;color:var(--forest);margin-bottom:4px">Hazelnut</div>
+        <div style="font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:10px">Caramel nude</div>
+        <p style="font-size:13px;color:var(--ink-soft);line-height:1.5">Warm. Bronzy. The "no-makeup makeup look" that works for everyone.</p>
+      </div>
+      <div style="background:#fff;border-radius:14px;padding:24px 20px;text-align:center;box-shadow:0 4px 12px rgba(31,27,23,0.04)">
+        <div style="width:120px;height:120px;border-radius:50%;margin:0 auto 18px;background:radial-gradient(circle at 35% 30%, #8A2F40 0%, #6C2231 50%, #3F121E 100%);box-shadow:inset 0 -10px 22px rgba(0,0,0,0.25),inset 0 6px 14px rgba(255,255,255,0.18),0 4px 12px rgba(31,27,23,0.12)"></div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:24px;font-weight:500;color:var(--forest);margin-bottom:4px">Fallen Leaves</div>
+        <div style="font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:10px">Cranberry deep</div>
+        <p style="font-size:13px;color:var(--ink-soft);line-height:1.5">Rich. Moody. Cozy fall vibes with wine-red depth and soft shimmer.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:28px;font-size:13px;color:var(--ink-soft);font-style:italic;font-family:var(--serif)">All three are full-size 7g tins. ~6 months of daily use each.</div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="s">
+  <div class="container">
+    <div class="s-head">
+      <span class="eyebrow">The clean-makeup truth</span>
+      <h2>Why we're not like<br>"other" <em>clean makeup.</em></h2>
+      <p>Most "clean" brands still use plastic, synthetic dyes, or sneaky filler ingredients. We don't.</p>
+    </div>
+    <div style="max-width:980px;margin:0 auto;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 6px 20px rgba(31,27,23,0.06);border:1px solid var(--line)">
+      <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;align-items:center;background:var(--bg-soft);font-weight:700;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-soft);border-bottom:1px solid var(--line)">
+        <div style="padding:18px 16px;text-align:left">What you get</div>
+        <div style="padding:18px 10px;text-align:center;color:var(--forest)">Naturally Wyld</div>
+        <div style="padding:18px 10px;text-align:center">"Clean" brands</div>
+        <div style="padding:18px 10px;text-align:center">Drugstore</div>
+      </div>
+      <div class="cmp-row" style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;align-items:center;border-bottom:1px solid var(--line);font-size:14px">
+        <div style="padding:16px;text-align:left;font-weight:500;color:var(--forest)">Real fruit pigments</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--forest);font-weight:700">✓ Always</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--ink-soft);opacity:0.55">Sometimes</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--ink-soft);opacity:0.55">✗ Never</div>
+      </div>
+      <div class="cmp-row" style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;align-items:center;border-bottom:1px solid var(--line);font-size:14px">
+        <div style="padding:16px;text-align:left;font-weight:500;color:var(--forest)">3-in-1 (lips/cheeks/eyes)</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--forest);font-weight:700">✓ One tin</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--ink-soft);opacity:0.55">3 products</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--ink-soft);opacity:0.55">3 products</div>
+      </div>
+      <div class="cmp-row" style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;align-items:center;border-bottom:1px solid var(--line);font-size:14px">
+        <div style="padding:16px;text-align:left;font-weight:500;color:var(--forest)">Plastic-free packaging</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--forest);font-weight:700">✓ Aluminium tin</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--ink-soft);opacity:0.55">Plastic tubes</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--ink-soft);opacity:0.55">Plastic tubes</div>
+      </div>
+      <div class="cmp-row" style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;align-items:center;border-bottom:1px solid var(--line);font-size:14px">
+        <div style="padding:16px;text-align:left;font-weight:500;color:var(--forest)">Fragrance &amp; talc-free</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--forest);font-weight:700">✓ Always</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--ink-soft);opacity:0.55">Sometimes</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--ink-soft);opacity:0.55">✗ Rarely</div>
+      </div>
+      <div class="cmp-row" style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;align-items:center;border-bottom:1px solid var(--line);font-size:14px">
+        <div style="padding:16px;text-align:left;font-weight:500;color:var(--forest)">Made in Canada by hand</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--forest);font-weight:700">✓ Kelowna, BC</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--ink-soft);opacity:0.55">Factory</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--ink-soft);opacity:0.55">Overseas</div>
+      </div>
+      <div class="cmp-row" style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;align-items:center;font-size:14px">
+        <div style="padding:16px;text-align:left;font-weight:500;color:var(--forest)">Cost per use (full face)</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--forest);font-weight:700">✓ ~$0.10</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--ink-soft);opacity:0.55">~$0.80</div>
+        <div style="padding:16px 10px;text-align:center;color:var(--ink-soft);opacity:0.55">~$0.40</div>
       </div>
     </div>
   </div>
@@ -988,13 +1100,13 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
         <div class="urgency-line">Last batch sold out in 11 days. Next batch ships in 6 weeks.</div>
         <div class="pay-row">
           <span class="pay-row-label">Secure checkout · multiple payment options</span>
-          <span class="pay-badge pay-secure"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="12" height="9" rx="1.5"/><path d="M7 9V6a3 3 0 0 1 6 0v3"/></svg> Shopify Secure</span>
-          <span class="pay-badge">Shop Pay</span>
-          <span class="pay-badge">Apple Pay</span>
-          <span class="pay-badge">Google Pay</span>
-          <span class="pay-badge">Visa</span>
-          <span class="pay-badge">Mastercard</span>
-          <span class="pay-badge">AMEX</span>
+          <span class="pay-secure-badge"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="12" height="9" rx="1.5"/><path d="M7 9V6a3 3 0 0 1 6 0v3"/></svg> Shopify Secure</span>
+          <svg class="pay-logo" viewBox="0 0 60 24" fill="none" aria-label="Visa"><rect width="60" height="24" rx="3" fill="#fff" stroke="#dde0e6"/><path d="M22.3 16.5l1.7-9.1h2.7l-1.7 9.1h-2.7zm12.5-8.9c-0.5-0.2-1.4-0.5-2.5-0.5-2.7 0-4.7 1.5-4.7 3.6 0 1.6 1.4 2.4 2.5 3 1.1 0.5 1.5 0.9 1.5 1.4 0 0.7-0.9 1.1-1.7 1.1-1.1 0-1.8-0.2-2.8-0.6l-0.4-0.2-0.4 2.3c0.7 0.3 1.9 0.6 3.2 0.6 2.9 0 4.8-1.5 4.8-3.7 0-1.2-0.7-2.1-2.4-2.9-1-0.5-1.6-0.9-1.6-1.4 0-0.5 0.5-1 1.6-1 0.9 0 1.6 0.2 2.1 0.4l0.3 0.1 0.4-2.2zm5.4 5.7l1.1-2.9c0 0 0.2-0.6 0.4-1l0.2 0.9 0.6 3h-2.3zm3.3-5.9h-2.1c-0.6 0-1.1 0.2-1.4 0.9l-4 9.2h2.8l0.6-1.5h3.5l0.3 1.5h2.5l-2.2-10.1zm-22.4 0l-2.6 6.2-0.3-1.4c-0.5-1.6-2-3.4-3.7-4.3l2.4 9.6h2.9l4.3-10.1h-3z" fill="#1A1F71"/></svg>
+          <svg class="pay-logo" viewBox="0 0 60 24" fill="none" aria-label="Mastercard"><rect width="60" height="24" rx="3" fill="#fff" stroke="#dde0e6"/><circle cx="25" cy="12" r="6" fill="#EB001B"/><circle cx="35" cy="12" r="6" fill="#F79E1B"/><path d="M30 7.5c1.5 1.2 2.5 3 2.5 4.5s-1 3.3-2.5 4.5c-1.5-1.2-2.5-3-2.5-4.5s1-3.3 2.5-4.5z" fill="#FF5F00"/></svg>
+          <svg class="pay-logo" viewBox="0 0 60 24" fill="none" aria-label="AMEX"><rect width="60" height="24" rx="3" fill="#016FD0"/><text x="30" y="16" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="9" fill="#fff" letter-spacing="0.05em">AMERICAN EXPRESS</text></svg>
+          <svg class="pay-logo" viewBox="0 0 60 24" fill="none" aria-label="Shop Pay"><rect width="60" height="24" rx="3" fill="#5A31F4"/><text x="30" y="15" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="11" fill="#fff">shop</text><text x="30" y="15" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="11" fill="#fff" dx="14">Pay</text></svg>
+          <svg class="pay-logo" viewBox="0 0 60 24" fill="none" aria-label="Apple Pay"><rect width="60" height="24" rx="3" fill="#000"/><path d="M18.3 9.5c0.4-0.5 0.7-1.2 0.6-1.9-0.6 0-1.3 0.4-1.7 0.9-0.4 0.4-0.7 1.2-0.6 1.8 0.7 0.1 1.3-0.3 1.7-0.8zm0.6 0.9c-1 0-1.7 0.5-2.2 0.5s-1.1-0.5-2-0.5c-1 0-2 0.6-2.5 1.5-1.1 1.9-0.3 4.6 0.8 6.1 0.5 0.7 1.1 1.5 1.9 1.5s1-0.5 2-0.5 1.2 0.5 2 0.5 1.4-0.7 1.9-1.5c0.6-0.8 0.8-1.6 0.9-1.7-0.1-0.1-1.7-0.7-1.7-2.7 0-1.7 1.4-2.5 1.4-2.5-0.7-1.2-2.1-1.2-2.5-1.2z" fill="#fff"/><text x="35" y="16" font-family="Arial,sans-serif" font-weight="600" font-size="11" fill="#fff">Pay</text></svg>
+          <svg class="pay-logo" viewBox="0 0 60 24" fill="none" aria-label="Google Pay"><rect width="60" height="24" rx="3" fill="#fff" stroke="#dde0e6"/><text x="30" y="15" text-anchor="middle" font-family="Arial,sans-serif" font-weight="500" font-size="10" fill="#5F6368">G</text><text x="30" y="15" font-family="Arial,sans-serif" font-weight="500" font-size="10" fill="#5F6368" dx="-12">Pay</text></svg>
         </div>
       </div>
 
@@ -1063,6 +1175,14 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
         <summary>What if I don't love it?</summary>
         <div class="faq-body">Message us within 30 days and we'll refund you, no questions, no return required. We back every order — small Canadian business, real humans behind the email.</div>
       </details>
+      <details>
+        <summary>When will my order arrive?</summary>
+        <div class="faq-body">Orders placed before 2pm PT ship the same day. Canada Post delivery typically takes 2-5 business days across BC/AB, 4-7 days across the rest of Canada. You'll get a tracking number by email as soon as it ships.</div>
+      </details>
+      <details>
+        <summary>How long does each tin last on the shelf?</summary>
+        <div class="faq-body">Sealed: 18 months from manufacture. Once opened: 9-12 months of daily use. Every tin is hand-poured fresh in small batches — no warehouse-aged stock sitting around. Yours will be made this week.</div>
+      </details>
     </div>
   </div>
 </section>
@@ -1071,8 +1191,8 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
 <section class="final">
   <div class="container">
     <div class="final-soldout">★ Sold out 7 times · don't miss this batch</div>
-    <h2>Your face will <em>thank you.</em></h2>
-    <p>Join 12,000+ Canadians who've switched to makeup made with real food.</p>
+    <h2>Stop wasting money<br>on <em>fake clean.</em></h2>
+    <p>Join 12,000+ Canadians who've switched to makeup made with real food. Last batch sold out in 11 days.</p>
     <div class="final-offer-line">3 best-sellers · $30 · free shipping</div>
     <a class="cta-btn" id="cta-final" href="https://naturallywyld.ca/cart/46636732252417:1?discount=FREESHIPMC&amp;checkout">
       <span id="cta-final-text">Claim My Starter Set — $30</span><span class="cta-arrow">→</span>
