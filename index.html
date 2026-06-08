@@ -748,26 +748,6 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
   body{padding-bottom:calc(86px + env(safe-area-inset-bottom))}
 }
 
-/* QUIZ */
-.quiz-dot{
-  flex:1;height:4px;border-radius:2px;background:var(--line);
-  transition:background .25s ease;
-}
-.quiz-dot.active{background:var(--forest)}
-.quiz-options{display:flex;flex-direction:column;gap:10px}
-.quiz-opt{
-  display:block;width:100%;text-align:left;
-  padding:16px 20px;border:1.5px solid var(--line);
-  border-radius:10px;font-size:15px;font-weight:500;color:var(--ink);
-  background:#fff;cursor:pointer;
-  transition:border-color .15s ease,background .15s ease,transform .12s ease;
-}
-.quiz-opt:hover{
-  border-color:var(--forest);background:var(--cream-soft);
-  transform:translateY(-1px);
-}
-.quiz-opt:active{transform:translateY(0)}
-
 /* EXIT INTENT MODAL */
 .modal-backdrop{
   position:fixed;inset:0;z-index:60;
@@ -1180,66 +1160,6 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
       </div>
     </div>
     <div style="text-align:center;margin-top:28px;font-size:13px;color:var(--ink-soft);font-style:italic;font-family:var(--serif)">All three are full-size 7g tins. ~6 months of daily use each.</div>
-  </div>
-</section>
-
-<!-- SHADE FINDER QUIZ -->
-<section class="s" style="background:var(--bg)">
-  <div class="container">
-    <div class="s-head">
-      <span class="eyebrow">Not sure which shade is for you?</span>
-      <h2>Find your <em>perfect match</em><br>in 3 questions.</h2>
-      <p>No quiz form, no email gate. Just answer below and we'll show you which shade to start with.</p>
-    </div>
-    <div id="quiz" style="max-width:680px;margin:0 auto">
-      <div id="quiz-card" style="background:#fff;border-radius:16px;padding:32px;box-shadow:0 8px 28px rgba(31,27,23,0.08);border:1px solid var(--line)">
-        <div id="quiz-progress" style="display:flex;gap:6px;margin-bottom:24px">
-          <span class="quiz-dot active" data-q="1"></span>
-          <span class="quiz-dot" data-q="2"></span>
-          <span class="quiz-dot" data-q="3"></span>
-        </div>
-        <div class="quiz-step" data-step="1">
-          <div style="font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px">Question 1 of 3</div>
-          <h3 style="font-family:var(--serif);font-size:28px;font-weight:500;color:var(--forest);margin-bottom:20px;line-height:1.15">What's your everyday vibe?</h3>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-add="warm">☀️ Bright, playful, fresh-faced</button>
-            <button class="quiz-opt" data-add="neutral">🌾 Natural, low-key, no-makeup makeup</button>
-            <button class="quiz-opt" data-add="cool">🍇 Rich, moody, a little sultry</button>
-          </div>
-        </div>
-        <div class="quiz-step" data-step="2" style="display:none">
-          <div style="font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px">Question 2 of 3</div>
-          <h3 style="font-family:var(--serif);font-size:28px;font-weight:500;color:var(--forest);margin-bottom:20px;line-height:1.15">Pick a fruit you'd actually eat:</h3>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-add="warm">🫐 Berries — raspberries, strawberries</button>
-            <button class="quiz-opt" data-add="neutral">🌰 Caramel-something — figs, dates, hazelnuts</button>
-            <button class="quiz-opt" data-add="cool">🍒 Dark fruit — cherries, plums, blackberries</button>
-          </div>
-        </div>
-        <div class="quiz-step" data-step="3" style="display:none">
-          <div style="font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px">Question 3 of 3</div>
-          <h3 style="font-family:var(--serif);font-size:28px;font-weight:500;color:var(--forest);margin-bottom:20px;line-height:1.15">When you wear lipstick, you go:</h3>
-          <div class="quiz-options">
-            <button class="quiz-opt" data-add="warm">💗 Pink — soft, bright, fresh</button>
-            <button class="quiz-opt" data-add="neutral">🍑 Nude — barely-there, warm</button>
-            <button class="quiz-opt" data-add="cool">🍷 Deep — wine, plum, statement</button>
-          </div>
-        </div>
-        <div class="quiz-result" id="quiz-result" style="display:none">
-          <div style="text-align:center">
-            <div style="font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--terra-dark);margin-bottom:10px">Your match</div>
-            <div id="quiz-swatch" style="width:120px;height:120px;border-radius:50%;margin:0 auto 18px;box-shadow:inset 0 -10px 22px rgba(0,0,0,0.25),inset 0 6px 14px rgba(255,255,255,0.18),0 4px 12px rgba(31,27,23,0.12)"></div>
-            <h3 id="quiz-shade-name" style="font-family:var(--serif);font-style:italic;font-size:32px;font-weight:500;color:var(--forest);margin-bottom:8px"></h3>
-            <p id="quiz-shade-desc" style="font-size:15px;color:var(--ink-soft);line-height:1.55;margin-bottom:14px;max-width:480px;margin-left:auto;margin-right:auto"></p>
-            <p style="font-size:14px;color:var(--ink);margin-bottom:22px">Good news — <b>the Starter Set includes this shade</b>, plus 2 others perfectly chosen to flatter every skin tone.</p>
-            <a class="cta-btn" id="quiz-cta" href="https://naturallywyld.ca/cart/46636732252417:1?discount=FREESHIPMC&amp;checkout" style="margin:0 auto">
-              Get the Starter Set — $30<span class="cta-arrow">→</span>
-            </a>
-            <button class="quiz-restart" id="quiz-restart" style="margin-top:14px;font-size:13px;color:var(--ink-soft);background:none;border:0;cursor:pointer;text-decoration:underline">Retake quiz →</button>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -1864,60 +1784,6 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
   }
   updateShipCountdown();
   setInterval(updateShipCountdown, 60000);
-
-  // SHADE FINDER QUIZ
-  var quizAnswers = [];
-  var quizSteps = document.querySelectorAll('.quiz-step');
-  var quizDots = document.querySelectorAll('.quiz-dot');
-  var quizResult = document.getElementById('quiz-result');
-  var shadeMap = {
-    warm: {
-      name: 'Raspberry Kiss',
-      desc: 'A bright berry-pink with playful energy. Universally flattering — looks fresh and dewy on every skin tone.',
-      swatch: 'radial-gradient(circle at 35% 30%, #D86D8C 0%, #C9587A 50%, #A03B5C 100%)'
-    },
-    neutral: {
-      name: 'Hazelnut',
-      desc: 'A warm caramel nude with soft brown undertones. The "no-makeup makeup look" everyone gets compliments on.',
-      swatch: 'radial-gradient(circle at 35% 30%, #C99774 0%, #A87654 50%, #7A4F35 100%)'
-    },
-    cool: {
-      name: 'Fallen Leaves',
-      desc: 'A deep cranberry with wine-red undertones and soft shimmer. Cozy, sultry, rich — for moodier days.',
-      swatch: 'radial-gradient(circle at 35% 30%, #8A2F40 0%, #6C2231 50%, #3F121E 100%)'
-    }
-  };
-  function selectAnswer(toneType){
-    quizAnswers.push(toneType);
-    var step = quizAnswers.length;
-    if (step < 3){
-      quizSteps[step-1].style.display = 'none';
-      quizSteps[step].style.display = 'block';
-      quizDots[step].classList.add('active');
-    } else {
-      // Determine winner — most-picked tone
-      var counts = {warm:0, neutral:0, cool:0};
-      quizAnswers.forEach(function(t){counts[t]++});
-      var winner = Object.keys(counts).reduce(function(a,b){return counts[a]>=counts[b]?a:b});
-      var shade = shadeMap[winner];
-      document.getElementById('quiz-swatch').style.background = shade.swatch;
-      document.getElementById('quiz-shade-name').textContent = shade.name;
-      document.getElementById('quiz-shade-desc').textContent = shade.desc;
-      quizSteps[2].style.display = 'none';
-      quizResult.style.display = 'block';
-    }
-  }
-  document.querySelectorAll('.quiz-opt').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      selectAnswer(btn.dataset.add);
-    });
-  });
-  document.getElementById('quiz-restart').addEventListener('click', function(){
-    quizAnswers = [];
-    quizSteps.forEach(function(s,i){ s.style.display = i===0 ? 'block' : 'none'; });
-    quizDots.forEach(function(d,i){ if(i>0) d.classList.remove('active'); });
-    quizResult.style.display = 'none';
-  });
 
   // EXIT-INTENT MODAL
   var modal = document.getElementById('modal-backdrop');
