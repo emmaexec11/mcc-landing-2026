@@ -334,6 +334,15 @@ section.s{padding:96px 0}
   background:#fff;border:1px solid var(--line);border-radius:12px;
   padding:24px;display:flex;flex-direction:column;
   box-shadow:0 2px 8px rgba(31,27,23,0.04);
+  position:relative;
+}
+.review-avatar{
+  width:44px;height:44px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-size:20px;font-weight:500;
+  color:var(--forest);
+  margin-bottom:14px;
+  box-shadow:inset 0 -4px 8px rgba(0,0,0,0.18),inset 0 3px 6px rgba(255,255,255,0.15),0 2px 5px rgba(31,27,23,0.10);
 }
 .review-card .stars{
   color:var(--terra);font-size:14px;letter-spacing:1.5px;margin-bottom:12px;
@@ -1060,6 +1069,7 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
     </div>
     <div class="review-grid">
       <div class="review-card">
+        <div class="review-avatar" style="background:radial-gradient(circle at 35% 30%, #D86D8C 0%, #A03B5C 100%)" aria-label="Mya avatar">M</div>
         <div class="stars">★★★★★</div>
         <p class="review-quote">Okay but why did no one tell me this would replace like 3 products in one?? I use it on my cheeks, lips, and even my lids. My makeup bag has literally never been this empty and my face has never looked this good.</p>
         <div class="review-author">
@@ -1067,6 +1077,7 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
         </div>
       </div>
       <div class="review-card">
+        <div class="review-avatar" style="background:radial-gradient(circle at 35% 30%, #C49B97 0%, #8B6B68 100%)" aria-label="Sarah avatar">S</div>
         <div class="stars">★★★★★</div>
         <p class="review-quote">This just makes me feel pretty without all the effort. I swipe it on in the morning and look awake and put together, even if I barely slept. The Raspberry Kiss is my new personality.</p>
         <div class="review-author">
@@ -1074,6 +1085,7 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
         </div>
       </div>
       <div class="review-card">
+        <div class="review-avatar" style="background:radial-gradient(circle at 35% 30%, #6B7A56 0%, #3A4434 100%);color:#FAF6EE" aria-label="Shaye avatar">S</div>
         <div class="stars">★★★★★</div>
         <p class="review-quote">LIFE-CHANGING for pregnancy-safe makeup. I felt like I had nothing safe to put on my face and this saved me. Beautiful colour, beautiful ingredients, beautiful brand.</p>
         <div class="review-author">
@@ -1081,24 +1093,27 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
         </div>
       </div>
       <div class="review-card">
+        <div class="review-avatar" style="background:radial-gradient(circle at 35% 30%, #C99774 0%, #7A4F35 100%);color:#FAF6EE" aria-label="Laura avatar">L</div>
         <div class="stars">★★★★★</div>
-        <p class="review-quote">Love this product! The colours are beautiful, natural-looking, and easy to apply.</p>
+        <p class="review-quote">I have been looking for natural products and I've also been looking for an all in one option. The colours are perfect for contouring, blush, eyes and cheeks. My lips tend to be dry — after using Naturally Wyld, my lips are still soft three days later.</p>
         <div class="review-author">
-          <b>Sana</b><span class="review-verified">✓ Verified buyer</span>
+          <b>Laura</b><span class="review-verified">✓ Verified buyer</span>
         </div>
       </div>
       <div class="review-card">
+        <div class="review-avatar" style="background:radial-gradient(circle at 35% 30%, #E5B7A0 0%, #B5694F 100%);color:#FAF6EE" aria-label="Glynis M avatar">G</div>
         <div class="stars">★★★★★</div>
-        <p class="review-quote">The colours are perfect and sit lovely on my skin. I'm very impressed.</p>
+        <p class="review-quote">My first order as I love the idea of putting natural ingredients on my face. All 3 colours of the trio package are gorgeous both on my cheeks and lips. Gorgeous colours.</p>
         <div class="review-author">
-          <b>Dale</b><span class="review-verified">✓ Verified buyer</span>
+          <b>Glynis M.</b><span class="review-verified">✓ Verified buyer</span>
         </div>
       </div>
       <div class="review-card">
+        <div class="review-avatar" style="background:radial-gradient(circle at 35% 30%, #8A2F40 0%, #3F121E 100%);color:#FAF6EE" aria-label="Carol R avatar">C</div>
         <div class="stars">★★★★★</div>
-        <p class="review-quote">Been slowly swapping all my makeup for cleaner stuff and this one's def staying. I love that it's made with actual fruit and oils instead of weird chemicals. Lasts way longer than I expected too.</p>
+        <p class="review-quote">The colours are great. I use them on my eyes and lips and the darkest as contour. So versatile — one tin really does the work of three.</p>
         <div class="review-author">
-          <b>Brenna</b><span class="review-verified">✓ Verified buyer</span>
+          <b>Carol R.</b><span class="review-verified">✓ Verified buyer</span>
         </div>
       </div>
     </div>
@@ -1116,12 +1131,12 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
         <div class="why-review-card why-review-1">
           <span class="stars">★★★★★</span>
           <p>"Lasts for hours — I use it as eye shadow too!"</p>
-          <cite>— Leanne</cite>
+          <cite>— Leanne · <span style="color:var(--forest);font-weight:600;letter-spacing:0.04em">Verified buyer</span></cite>
         </div>
         <div class="why-review-card why-review-2">
           <span class="stars">★★★★★</span>
           <p>"Feels so good on my sensitive skin."</p>
-          <cite>— Darshika</cite>
+          <cite>— Darshika · <span style="color:var(--forest);font-weight:600;letter-spacing:0.04em">Verified buyer</span></cite>
         </div>
       </div>
       <div class="why-content">
