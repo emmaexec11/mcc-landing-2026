@@ -71,6 +71,13 @@ body{
   html, body, main, section, .container { max-width:100vw; overflow-x:hidden; }
   .container { padding-left:18px; padding-right:18px; }
 }
+/* MOBILE GRID STACKING — overrides inline 3-column grids to stack on small screens */
+@media(max-width:680px){
+  [style*="grid-template-columns:repeat(3,1fr)"] {
+    grid-template-columns:1fr !important;
+    gap:14px !important;
+  }
+}
 
 /* SCROLL REVEAL */
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
