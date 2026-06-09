@@ -162,9 +162,13 @@ a{color:inherit;text-decoration:none}
   display:grid;grid-template-columns:1.05fr 1fr;
   gap:64px;align-items:center;
 }
+.hero-media-mobile{display:none}
 @media(max-width:900px){
-  .hero{padding:24px 0 36px}
-  .hero-grid{grid-template-columns:1fr;gap:24px}
+  .hero{padding:20px 0 30px}
+  .hero-grid{display:flex;flex-direction:column;gap:18px}
+  .hero-media-desktop{display:none}
+  .hero-media-mobile{display:block;margin:14px 0 4px}
+  .hero-media-mobile .hero-media{aspect-ratio:5/4;max-height:340px;border-radius:14px}
 }
 .hero-soldout{
   display:inline-flex;align-items:center;gap:8px;
@@ -990,6 +994,16 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
       <div>
         <span class="hero-soldout">★ Sold out 7 times — last batch shipping now</span>
         <h1>Real makeup.<br>Made with <em>real food.</em></h1>
+
+        <!-- MOBILE-ONLY product image inserted right after headline for fast 3-second hook -->
+        <div class="hero-media-mobile">
+          <div class="hero-media">
+            <div class="hero-badge">3 tins · price of 1</div>
+            <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Multi_colour_cream_bundle_sharpened.jpg?v=1756846735" alt="Naturally Wyld Multi-Colour Cream Starter Set — Fallen Leaves, Hazelnut, Raspberry Kiss" width="800" height="640" fetchpriority="high">
+            <div class="hero-badge hero-badge-2">★ 4.9 · 436+ reviews</div>
+          </div>
+        </div>
+
         <p class="hero-sub"><b>3 full-size tins for the price of 1.</b> Hazelnut · Raspberry Kiss · Fallen Leaves. Free shipping.</p>
         <p class="hero-meta">Lips, cheeks, and eyes — one tin does it all. Hand-poured in Kelowna, BC.</p>
         <div class="hero-stars">
@@ -1021,9 +1035,9 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
           <span><svg class="ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10l5 5 9-10"/></svg> Ships in 24 hrs</span>
         </div>
       </div>
-      <div class="hero-media">
+      <div class="hero-media hero-media-desktop">
         <div class="hero-badge">3 tins · price of 1</div>
-        <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Multi_colour_cream_bundle_sharpened.jpg?v=1756846735" alt="Naturally Wyld Multi-Colour Cream Starter Set — Fallen Leaves, Hazelnut, Raspberry Kiss" width="800" height="800" fetchpriority="high">
+        <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Multi_colour_cream_bundle_sharpened.jpg?v=1756846735" alt="Naturally Wyld Multi-Colour Cream Starter Set — Fallen Leaves, Hazelnut, Raspberry Kiss" width="800" height="800">
         <div class="hero-badge hero-badge-2">★ 4.9 · 436+ reviews</div>
       </div>
     </div>
