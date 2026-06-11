@@ -1840,42 +1840,50 @@ footer .copy{margin-top:20px;font-size:12px;color:rgba(250,246,238,0.4)}
     if (e.key === 'Escape' && modal.classList.contains('visible')) hideModal();
   });
 
-  // TRUE EXIT INTENT — desktop: mouse leaves through top
+  // ────────────────────────────────────────────────────────────────────────
+  // STRICT EXIT TRIGGERS — only fire when 99% certain user is leaving.
+  // Removed: scroll-back-above-offer (too aggressive — fires mid-engagement).
+  // Removed: 15s tab-switch (too aggressive — phones get notifications constantly).
+  // ────────────────────────────────────────────────────────────────────────
+  var pageLoadAt = Date.now();
+  var TIME_GATE = 30000; // must be on page 30+ sec before any exit trigger can fire
+
+  // DESKTOP — mouse genuinely leaves through the top of the viewport (close tab / back button area)
   document.addEventListener('mouseout', function(e){
-    if (!e.relatedTarget && e.clientY < 10) showModal();
+    if (window.innerWidth < 900) return; // desktop only
+    if (Date.now() - pageLoadAt < TIME_GATE) return;
+    if (!e.relatedTarget && e.clientY < 5) showModal();
   });
 
-  // TRUE EXIT INTENT — mobile: tab gets backgrounded
-  // Fires when user switches apps, locks phone, hits home button — real abandonment signal.
-  // Only counts if they've spent some real time on the page (>15s) to avoid firing on accidental swipes.
-  var pageLoadAt = Date.now();
-  document.addEventListener('visibilitychange', function(){
-    if (document.visibilityState === 'hidden'
-        && (Date.now() - pageLoadAt) > 15000
-        && window.innerWidth < 900){
-      // Mobile only — desktop already has mouse-leave signal
+  // MOBILE — back button gesture (pushes history then catches popstate before navigation completes)
+  if (window.innerWidth < 900) {
+    history.pushState({trap: true}, '');
+    window.addEventListener('popstate', function(e){
+      if (Date.now() - pageLoadAt < TIME_GATE) return;
+      if (!shouldShowModal()) return;
       showModal();
+      // Push the trap entry back so they stay on this page (they can hit back again to actually leave)
+      history.pushState({trap: true}, '');
+    });
+  }
+
+  // MOBILE — long tab-switch-away (5+ sec hidden AND 30+ sec on page) = real abandonment
+  var hiddenAt = null;
+  document.addEventListener('visibilitychange', function(){
+    if (window.innerWidth >= 900) return; // mobile only
+    if (Date.now() - pageLoadAt < TIME_GATE) return;
+    if (document.visibilityState === 'hidden') {
+      hiddenAt = Date.now();
+    } else if (hiddenAt && (Date.now() - hiddenAt) > 5000) {
+      // Was hidden for 5+ seconds (genuine app switch, not a notification glance)
+      showModal();
+      hiddenAt = null;
+    } else {
+      hiddenAt = null;
     }
   });
 
-  // SCROLL-BACK-ABOVE-OFFER — only fires if user reached the offer card then scrolled back above it.
-  // True "I was deciding, now I'm leaving" signal. Replaces the more aggressive scroll-back-to-top.
-  var reachedOffer = false;
-  var offerEl = document.querySelector('#offer');
-  if ('IntersectionObserver' in window && offerEl){
-    new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if (e.isIntersecting) reachedOffer = true;
-        else if (reachedOffer && e.boundingClientRect.top > 0){
-          // Offer is BELOW viewport again = user scrolled back above it
-          showModal();
-        }
-      });
-    }, {threshold:0.5}).observe(offerEl);
-  }
-
   // Tripwire CTA click — just let the link navigate to the discounted cart.
-  // The cooldown is already set in showModal(), so closing isn't required.
 
 })();
 </script>
