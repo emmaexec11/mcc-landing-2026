@@ -1,0 +1,1622 @@
+{% layout 'minimal' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi‑Colour Cream Tester Pack – Naturally Wyld</title>
+    <!-- Updated: Deal badge colour optimized -->
+    
+    <!-- Critical: Preconnect FIRST -->
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Performance: DNS prefetch for video CDN -->
+    <link rel="dns-prefetch" href="https://cdn.shopify.com">
+    
+    <!-- Preload hero image -->
+    <link rel="preload" as="image" href="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/MCC_Landing_page_header_Mobile_4.png?v=1769199279" fetchpriority="high" media="(max-width: 600px)">
+    <link rel="preload" as="image" href="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/MCC_Landing_page_header_3.png?v=1769195586" fetchpriority="high" media="(min-width: 601px)">
+    
+    <!-- Inline critical CSS - everything above the fold -->
+    <style>
+:root{--primary:#4A3728;--secondary:#7A1E26;--accent:#8E9D8E;--text:#3D3D3D;--text-light:#666;--heading:#3D2B1F;--gold:#C9A227}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:var(--text);background:#FDFCFB;line-height:1.65;font-size:15px;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:Georgia,'Times New Roman',serif;color:var(--heading);font-weight:600}
+.container{max-width:1140px;margin:0 auto;padding:0 20px}
+img{max-width:100%;height:auto;display:block}
+
+/* Announcement */
+.announcement{background:#9A6B65;color:#fff;text-align:center;padding:10px 20px;font-size:13px;font-weight:500}
+
+/* Hero - Critical */
+.hero{padding:60px 0 90px;background:#FDFCFB}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.hero-mobile-headline{display:none}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #f0ebe6;padding:6px 14px;border-radius:25px;font-size:12px;color:var(--secondary);margin-bottom:16px;font-weight:500}
+.hero h1{font-size:2.2rem;line-height:1.15;margin-bottom:8px}
+.hero h1 em{color:var(--secondary);font-style:normal}
+.hero-subhead{font-size:16px;color:var(--secondary);font-weight:600;margin-bottom:10px}
+.product-label-top{text-align:center;margin-bottom:10px}
+.product-label-top .product-label-title{font-size:11px;text-transform:uppercase;letter-spacing:0.12em;color:var(--secondary);font-weight:600}
+.product-label-top .product-label-shades{font-size:13px;color:var(--text)}
+.hero-img-wrap{position:relative;background:#FDFCFB}
+.hero-img-wrap img{width:100%;height:auto;display:block}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#fff;padding:16px 32px;border-radius:30px;text-decoration:none;font-weight:600;font-size:15px;border:none;cursor:pointer;width:100%}
+.btn-wrap{margin-top:18px}
+.btn-micro{font-size:12px;margin-top:10px;color:var(--text-light);text-align:center}
+.offer-box{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 16px;margin-top:12px}
+.offer-box-item{font-size:12px;color:var(--text)}
+
+/* Trust Strip */
+.trust-strip{padding:16px 0;background:#fff;border-top:1px solid #f0ebe6;border-bottom:1px solid #f0ebe6;text-align:center}
+.trust-strip-inner{display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;font-size:13px}
+
+/* Mobile Critical */
+@media(max-width:600px){
+body{font-size:14px}
+.container{padding:0 20px}
+.announcement{padding:10px 16px;font-size:11px;line-height:1.4}
+.hero{padding:16px 0 20px}
+.hero-grid{display:block}
+.hero-mobile-headline{display:block;text-align:center;margin-bottom:10px}
+.hero-mobile-headline .hero-badge{margin-bottom:8px;font-size:10px;padding:5px 12px}
+.hero-mobile-headline h1{font-size:1.6rem;line-height:1.12;margin-bottom:4px;letter-spacing:-0.02em}
+.hero-mobile-headline .hero-subhead{font-size:12px;color:var(--text-light);margin-bottom:0}
+.hero-badge-desktop,.hero-h1-desktop,.hero-subhead-desktop,.hero-sub,.hero-checks{display:none}
+.hero-product{margin:0 -20px}
+.hero-img-wrap{max-width:100%;aspect-ratio:auto;background:transparent;border-radius:0}
+.product-label-top{margin-bottom:6px;padding:0 20px}
+.product-label-top .product-label-title{font-size:10px}
+.product-label-top .product-label-shades{font-size:11px}
+.offer-callout{padding:0 20px}
+.offer-callout .offer-arrow{display:none}
+.offer-callout .offer-pill{font-size:13px;padding:10px 20px;margin-bottom:8px}
+.offer-box{margin-top:8px;gap:4px 12px}
+.offer-box-item{font-size:11px}
+.hero-mobile-cta{display:none}
+.hero-mobile-testimonial{display:flex;gap:10px;padding:14px 16px;margin:14px 20px 0;background:#fff;border-radius:10px;border:1px solid #f0ebe6}
+.hero-mobile-testimonial img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.hmt-content{flex:1}
+.hmt-stars{font-size:11px;color:var(--gold);margin-bottom:2px}
+.hmt-content p{font-size:12px;font-style:italic;color:var(--text);line-height:1.4;margin-bottom:2px}
+.hmt-name{font-size:10px;color:var(--text-light)}
+.btn{padding:14px 28px;font-size:14px;max-width:100%;border-radius:30px;font-weight:600}
+.btn-wrap{display:none}
+.trust-strip-inner::before{content:'★★★★★ 4.9/5 from 436+ reviews';font-size:12px;color:var(--text);font-weight:500}
+.trust-item{display:none}
+}
+</style>
+
+    <!-- Non-blocking font load -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+
+    <!-- Deferred full CSS -->
+    <style>
+/* Full CSS - loads after critical */
+:root{--primary:#4A3728;--secondary:#7A1E26;--accent:#8E9D8E;--accent-dark:#7d8c7d;--cream:#FAF7F4;--cream-dark:#F5F1ED;--warm-bg:#f5efe9;--text:#3D3D3D;--text-light:#666;--gold:#C9A227;--heading:#3D2B1F}
+body.fonts-loaded{font-family:'Poppins',sans-serif}
+body.fonts-loaded h1,body.fonts-loaded h2,body.fonts-loaded h3,body.fonts-loaded h4{font-family:'Playfair Display',serif}
+
+/* Announcement */
+.announcement{background:#9A6B65;color:#fff;text-align:center;padding:10px 20px;font-size:13px;font-weight:500}
+.announcement span{color:#fff;font-weight:600}
+
+/* Social Proof Bar */
+.proof-bar{background:#FDFCFB;padding:12px 20px;display:flex;justify-content:center;align-items:center;gap:30px;flex-wrap:wrap;font-size:12px;color:var(--text-light);border-bottom:1px solid #f0ebe6}
+.proof-bar .stars{color:var(--gold);font-size:14px}
+.proof-bar strong{color:var(--text)}
+
+/* Hero */
+.hero{padding:60px 0 90px;background:#FDFCFB}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.hero-mobile-headline{display:none}
+.hero-mobile-cta{display:none}
+.hero-mobile-testimonial{display:none}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #f0ebe6;padding:6px 14px;border-radius:25px;font-size:12px;color:var(--secondary);margin-bottom:16px;font-weight:500;box-shadow:0 2px 8px rgba(0,0,0,.03)}
+.hero h1{font-size:2.2rem;line-height:1.15;margin-bottom:8px}
+.hero h1 em{color:var(--secondary);font-style:normal}
+.hero-subhead{font-size:16px;color:var(--secondary);font-weight:600;margin-bottom:10px}
+.hero-sub{font-size:14px;color:var(--text);margin-bottom:16px;line-height:1.6}
+.hero-checks{display:flex;flex-wrap:wrap;gap:6px 14px;margin-bottom:16px;font-size:11px;color:var(--text-light)}
+.hero-checks span{display:flex;align-items:center;gap:4px}
+.hero-checks svg{width:13px;height:13px;color:var(--accent)}
+
+/* Offer Callout */
+.offer-callout{text-align:center;margin-top:12px}
+.offer-arrow{display:block;font-size:28px;color:#000;margin-bottom:6px;animation:bounce 2s ease-in-out infinite}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.offer-pill{display:inline-block;background:var(--secondary);color:#fff;font-size:14px;font-weight:700;padding:10px 22px;border-radius:25px;letter-spacing:0.5px;margin-bottom:12px}
+.deal-badge{display:inline-block;background:linear-gradient(135deg, #7A1E26 0%, #5A1419 100%);color:#fff;font-size:12px;font-weight:700;padding:8px 16px;border-radius:6px;letter-spacing:0.4px;margin-bottom:8px;box-shadow:0 4px 15px rgba(122,30,38,0.4), 0 1px 3px rgba(0,0,0,0.1);position:relative;text-transform:uppercase}
+.offer-box{background:#f9f7f5;border-radius:10px;padding:16px 20px;text-align:center}
+.offer-box-title{display:block;font-size:13px;font-weight:700;color:var(--heading);margin-bottom:8px}
+.offer-box-item{display:block;font-size:12px;color:var(--text);line-height:1.8}
+.offer-micro{font-size:12px;color:var(--secondary);font-style:italic;margin-top:12px}
+
+/* Product Label Top */
+.product-label-top{text-align:center;margin-bottom:12px}
+.product-label-top .product-label-title{display:block;font-size:14px;font-weight:700;color:var(--secondary);letter-spacing:1px;margin-bottom:4px}
+.product-label-top .product-label-shades{display:block;font-size:13px;font-weight:500;color:var(--text)}
+
+/* Hero Testimonial */
+.hero-quote{display:flex;gap:10px;align-items:flex-start;margin-bottom:20px}
+.hero-quote img{width:36px;height:36px;border-radius:50%;object-fit:cover}
+.hero-quote-text{flex:1}
+.hero-quote-text .stars{color:var(--gold);font-size:11px;margin-bottom:3px}
+.hero-quote-text p{font-size:12px;color:var(--text-light);font-style:italic;line-height:1.5;margin-bottom:3px}
+.hero-quote-text .name{font-size:11px;font-weight:600;color:var(--text-light)}
+
+/* Hero Product */
+.hero-product{position:relative;text-align:center}
+.hero-img-wrap{max-width:480px;margin:0 auto}
+.hero-img-wrap img{width:100%;height:auto}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:#fff;padding:16px 32px;border-radius:30px;text-decoration:none;font-size:15px;font-weight:600;transition:all .25s;box-shadow:0 4px 15px rgba(139,154,109,.3);width:100%;max-width:380px}
+.btn:hover{background:var(--secondary);transform:translateY(-2px);box-shadow:0 4px 20px rgba(122,30,38,.35)}
+.btn svg{width:18px;height:18px}
+.btn-wrap{text-align:center;margin-top:20px}
+.btn-sub{font-size:11px;color:var(--text-light);margin-top:8px;display:flex;align-items:center;justify-content:center;gap:8px}
+.btn-micro{font-size:12px;color:var(--secondary);font-weight:500;margin-top:12px;margin-bottom:0}
+.btn-sub svg{width:14px;height:14px;color:var(--accent)}
+
+/* Trust Strip */
+.trust-strip{background:#FDFCFB;padding:30px 0;border-top:1px solid #f0ebe6;border-bottom:1px solid #f0ebe6}
+.trust-strip-inner{display:flex;justify-content:center;align-items:center;gap:40px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:10px;font-size:13px}
+.trust-icon{width:40px;height:40px;background:#F7F4F1;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px}
+
+/* Section Headers */
+.sec-head{text-align:center;max-width:650px;margin:0 auto 40px}
+.sec-label{display:inline-block;background:#fff;padding:6px 16px;border-radius:20px;font-size:12px;color:var(--secondary);margin-bottom:12px;border:1px solid #f0ebe6}
+.sec-head h2{font-size:1.9rem;margin-bottom:12px;color:var(--heading)}
+.sec-head p{color:var(--text-light);font-size:15px}
+
+/* How It Works */
+.how{padding:70px 0;background:#fff}
+.how-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:center}
+.how-content h2{font-size:2rem;margin-bottom:16px;color:var(--heading);line-height:1.2}
+.how-intro{font-size:14px;color:var(--text-light);line-height:1.7;margin-bottom:28px}
+.how-steps{margin-bottom:28px}
+.how-step{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid #efe9e4}
+.how-step:last-child{border-bottom:none}
+.how-step .step-num{width:32px;height:32px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;flex-shrink:0}
+.how-step h4{font-size:15px;margin-bottom:2px;font-family:'Poppins',sans-serif;font-weight:600;color:var(--heading)}
+.how-step p{font-size:13px;color:var(--text-light);margin:0}
+
+/* Mini Testimonial */
+.mini-testimonial{display:flex;align-items:center;gap:10px;background:#F9F7F5;padding:12px 16px;border-radius:10px;margin-top:20px;font-size:13px;font-style:italic;color:var(--text)}
+.mini-testimonial img{width:36px;height:36px;border-radius:50%;object-fit:cover}
+.mini-testimonial .stars{color:var(--gold);font-size:11px;display:block;margin-bottom:2px;font-style:normal}
+.mini-testimonial span{font-style:normal;font-weight:600;font-size:11px;color:var(--text-light)}
+
+/* Media Collage */
+.how-media{position:relative}
+.media-collage{display:flex;gap:6px;max-width:360px;margin:0 auto}
+.media-collage-mobile{display:none}
+.collage-left{display:flex;flex-direction:column;align-items:flex-end;gap:10px;flex:1.2}
+.collage-right{display:flex;flex-direction:column;gap:6px;flex:1}
+.collage-video{position:relative;border-radius:0 20px 0 20px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,0.1);cursor:pointer;width:100%;aspect-ratio:3/4}
+.collage-video video{width:100%;height:100%;object-fit:cover;display:block}
+.video-overlay{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;background:rgba(255,255,255,0.9);border-radius:50%;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.2s;pointer-events:none}
+.collage-video:hover .video-overlay{opacity:1}
+.video-overlay .play-icon{display:none;font-size:14px;color:var(--primary);margin-left:3px}
+.video-overlay .pause-icon{display:block;font-size:11px;color:var(--primary);letter-spacing:2px}
+.collage-video.paused .video-overlay .play-icon{display:block}
+.collage-video.paused .video-overlay .pause-icon{display:none}
+.collage-img-bl{width:55%;aspect-ratio:1/1.1;object-fit:cover;border-radius:0 20px 0 20px;box-shadow:0 5px 15px rgba(0,0,0,0.1)}
+.collage-img-tr{width:70%;aspect-ratio:1.3/1;object-fit:cover;border-radius:0 20px 0 20px;box-shadow:0 5px 15px rgba(0,0,0,0.1);align-self:flex-start}
+.collage-img-br{width:100%;flex:1;min-height:200px;object-fit:cover;border-radius:20px 0 20px 0;box-shadow:0 5px 15px rgba(0,0,0,0.1)}
+
+/* Social Proof Section */
+.social-proof{padding:70px 0;background:#FAF8F5}
+.proof-scroll{display:flex;gap:20px;overflow-x:auto;padding:10px 0;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.proof-scroll::-webkit-scrollbar{display:none}
+.proof-card{flex:0 0 300px;background:#fff;padding:24px;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.06)}
+.proof-card-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.proof-card-head img{width:48px;height:48px;border-radius:50%;object-fit:cover}
+.proof-card-head h5{font-size:14px;font-family:'Poppins',sans-serif;font-weight:600;margin-bottom:2px}
+.proof-card-head .badge{font-size:11px;color:var(--accent);font-weight:500}
+.proof-card .stars{color:var(--gold);font-size:13px;margin-bottom:10px}
+.proof-card p{font-size:13px;line-height:1.6;color:var(--text)}
+
+/* Benefits Section */
+.benefits{padding:70px 0;background:#fff}
+.benefits-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+.benefits-img{position:relative}
+.benefits-img-wrap{position:relative;display:inline-block}
+.benefits-img-wrap>img{width:100%;max-width:320px;border-radius:60% 40% 50% 50% / 50% 50% 40% 60%;box-shadow:0 20px 60px rgba(0,0,0,0.1)}
+
+/* Floating Testimonials */
+.floating-testimonial{
+    position:absolute;
+    background:#fff;
+    padding:12px 14px;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+    max-width:160px;
+    z-index:2;
+    border:1px solid #f5f0eb;
+}
+.floating-testimonial.ft-top{
+    top:-50px;
+    left:-100px;
+    transform:rotate(-3deg);
+}
+.floating-testimonial.ft-bottom{
+    bottom:-40px;
+    right:-70px;
+    transform:rotate(2deg);
+}
+.ft-stars{color:var(--gold);font-size:10px;margin-bottom:5px}
+.floating-testimonial p{font-size:11px;line-height:1.5;color:var(--text);margin:0 0 5px 0;font-style:italic}
+.ft-name{font-size:10px;font-weight:600;color:var(--text-light)}
+
+.benefits-content h2{font-size:1.9rem;margin-bottom:24px;color:var(--heading)}
+.benefits-list{list-style:none;margin-bottom:24px}
+.benefits-list li{display:flex;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px solid #f0ebe6;font-size:14px;color:var(--text)}
+.benefits-list li:last-child{border-bottom:none}
+.benefit-icon{font-size:18px;width:24px;flex-shrink:0}
+.benefits-list strong{color:var(--heading)}
+.origin-box{background:#F9F7F5;padding:18px 20px;border-radius:12px;font-size:13px;line-height:1.7;color:var(--text);border-left:4px solid var(--accent)}
+.origin-box strong{color:var(--secondary)}
+.benefits-cta{margin-top:24px;text-align:center}
+.benefits-cta .btn{max-width:320px}
+
+/* Testimonials Section */
+.reviews{padding:70px 0;background:#FAF8F5}
+.rev-carousel{display:none}
+.rev-grid-desktop{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.rev-card{background:#FDFCFB;padding:28px;border-radius:16px;position:relative;border:1px solid #f0ebe6}
+.rev-card::before{content:'"';position:absolute;top:20px;right:24px;font-size:48px;color:#f0ebe6;font-family:Georgia,serif;line-height:1}
+.rev-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.rev-head img{width:52px;height:52px;border-radius:50%;object-fit:cover}
+.rev-head h5{font-size:14px;font-family:'Poppins',sans-serif;font-weight:600}
+.rev-head .badge{display:block;font-size:11px;color:var(--accent);margin-top:2px}
+.rev-card .stars{color:var(--gold);font-size:14px;margin-bottom:12px}
+.rev-card>p{font-size:14px;line-height:1.65;color:var(--text)}
+
+/* Review Carousel (for mobile) */
+.rev-carousel-track{position:relative;overflow:hidden}
+.rev-carousel-track .rev-card{display:none}
+.rev-carousel-track .rev-card.active{display:block;animation:fadeIn 0.4s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateX(10px)}to{opacity:1;transform:translateX(0)}}
+.rev-carousel-nav{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:20px}
+.rev-carousel-dots{display:flex;gap:8px}
+.rev-dot{width:8px;height:8px;border-radius:50%;background:#d4ccc4;border:none;padding:0;cursor:pointer;transition:all 0.2s}
+.rev-dot.active{background:var(--secondary);width:24px;border-radius:4px}
+.rev-arrow{width:36px;height:36px;border-radius:50%;background:#fff;border:1px solid #e8e2dc;display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--text);cursor:pointer;transition:all 0.2s}
+.rev-arrow:hover{background:var(--secondary);color:#fff;border-color:var(--secondary)}
+
+/* UGC Section */
+.ugc-section{margin-top:50px}
+.ugc-label{text-align:center;font-size:12px;color:var(--text-light);text-transform:uppercase;letter-spacing:1px;margin-bottom:20px}
+.ugc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ugc-grid-2{grid-template-columns:repeat(2,1fr);max-width:600px;margin:0 auto}
+.ugc-card{background:#fff;border-radius:12px;overflow:hidden;border:1px solid #f0ebe6;transition:transform 0.2s}
+.ugc-card:hover{transform:translateY(-3px)}
+.ugc-video-placeholder{aspect-ratio:9/12;background:linear-gradient(135deg,#e8e2dc,#d4ccc4);display:flex;align-items:center;justify-content:center;position:relative;cursor:pointer}
+.ugc-play{width:50px;height:50px;background:rgba(255,255,255,0.95);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--secondary);padding-left:4px;box-shadow:0 4px 15px rgba(0,0,0,0.15)}
+.ugc-duration{position:absolute;bottom:10px;right:10px;background:rgba(0,0,0,0.7);color:#fff;font-size:11px;padding:3px 8px;border-radius:4px}
+.ugc-info{padding:16px}
+.ugc-info p{font-size:13px;color:var(--text);line-height:1.5;margin-bottom:8px;font-style:italic}
+.ugc-handle{font-size:12px;color:var(--secondary);font-weight:600}
+
+/* Screenshot-style Reviews */
+.screenshot-reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:40px;max-width:800px;margin-left:auto;margin-right:auto}
+.screenshot-card{background:#fff;border:1px solid #e5e0db;border-radius:8px;padding:18px 20px;font-size:13px}
+.screenshot-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.screenshot-stars{color:var(--gold);font-size:14px;letter-spacing:1px}
+.screenshot-verified{font-size:10px;color:#4a7c4a;font-weight:600;background:#f0f5f0;padding:3px 8px;border-radius:4px}
+.screenshot-text{color:var(--text);line-height:1.6;margin-bottom:14px}
+.screenshot-footer{display:flex;justify-content:space-between;align-items:center;padding-top:12px;border-top:1px solid #f0ebe6}
+.screenshot-name{font-weight:600;color:var(--heading);font-size:12px}
+.screenshot-date{font-size:11px;color:var(--text-light)}
+
+/* Reviews CTA */
+.reviews-cta{text-align:center;margin-top:40px}
+.reviews-count{font-size:14px;color:var(--text);margin-bottom:20px}
+.reviews-count::before{content:'';display:inline-block;width:20px}
+
+/* Problem Section */
+.problem{padding:70px 0;background:#FAF8F5}
+.problem-header{text-align:center;max-width:700px;margin:0 auto 50px}
+.problem-header h2{font-size:1.9rem;margin-bottom:16px;line-height:1.3;color:var(--heading)}
+.problem-header p{font-size:15px;color:var(--text-light)}
+.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.problem-visual{text-align:center}
+.problem-visual img{max-width:320px;width:100%}
+.problem-content{text-align:left}
+.impact-stat-clean{margin-bottom:28px}
+.impact-stat-clean .stat-number{display:block;font-family:'Playfair Display',serif;font-size:3.5rem;font-weight:700;color:var(--secondary);line-height:1}
+.impact-stat-clean .stat-label{font-size:14px;color:var(--text-light);margin-top:4px;display:block}
+.problem-stats{list-style:none;margin-bottom:28px}
+.problem-stats li{display:flex;align-items:flex-start;gap:10px;padding:12px 0;font-size:14px;color:var(--text);border-bottom:1px solid #efe9e3}
+.problem-stats li:last-child{border-bottom:none}
+.problem-stats span{font-size:18px}
+
+/* Simple Quote Style */
+.switch-quote-simple{display:flex;gap:12px;align-items:flex-start;margin-top:20px}
+.switch-quote-simple img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.switch-quote-simple p{font-size:13px;font-style:italic;line-height:1.6;color:var(--text);margin-bottom:4px}
+.switch-quote-simple span{font-size:11px;font-weight:600;color:var(--text-light)}
+
+/* Ingredients */
+.ingredients{padding:0;background:#fff}
+.ing-bg{position:relative;background-image:url('https://cdn.shopify.com/s/files/1/0640/4977/4849/files/ChatGPT_Image_Jan_12_2026_10_03_14_AM.png?v=1768241035');background-size:cover;background-position:center;padding:80px 0}
+.ing-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg, rgba(250,248,245,0.92) 0%, rgba(253,252,251,0.88) 100%)}
+.ing-container{position:relative;z-index:1}
+.ing-head h2{color:var(--heading)}
+.ing-head p{color:var(--text-light)}
+.ing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.ing-card{background:#fff;padding:28px 24px;border-radius:16px;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,0.08);border:1px solid rgba(255,255,255,0.8);transition:transform 0.3s, box-shadow 0.3s}
+.ing-card:hover{transform:translateY(-5px);box-shadow:0 15px 50px rgba(0,0,0,0.12)}
+.ing-icon{width:56px;height:56px;background:linear-gradient(135deg,#FAF8F5,#f5f0eb);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:24px;box-shadow:0 4px 15px rgba(0,0,0,0.05)}
+.ing-card h4{font-size:15px;margin-bottom:16px;font-family:'Poppins',sans-serif;font-weight:600;color:var(--heading)}
+.ing-list{list-style:none;text-align:left;padding:0;margin:0}
+.ing-list li{font-size:13px;color:var(--text);padding:8px 0;padding-left:18px;position:relative;border-bottom:1px solid #f5f0eb}
+.ing-list li:last-child{border-bottom:none}
+.ing-list li::before{content:'•';position:absolute;left:0;color:var(--accent);font-weight:bold}
+.ing-link{display:inline-block;color:var(--secondary);font-size:14px;font-weight:600;text-decoration:none;padding:12px 24px;background:#fff;border-radius:25px;box-shadow:0 4px 15px rgba(0,0,0,0.08);transition:all 0.2s}
+.ing-link:hover{background:var(--secondary);color:#fff;transform:translateY(-2px);box-shadow:0 6px 20px rgba(122,30,38,0.2)}
+
+/* Add-On Section */
+.addon{padding:70px 0;background:#FAF8F5}
+.addon-header-text{text-align:center;margin-bottom:24px}
+.addon-label{display:inline-block;background:#fff;padding:6px 16px;border-radius:20px;font-size:12px;color:var(--secondary);margin-bottom:12px;border:1px solid #f0ebe6}
+.addon-header-text h3{font-size:1.6rem;color:var(--heading);margin-bottom:8px}
+.addon-subhead{font-size:14px;color:var(--text-light);max-width:400px;margin:0 auto}
+.addon-box{background:#fff;border:2px solid #e8e2dc;border-radius:16px;padding:32px;max-width:700px;margin:0 auto;transition:all 0.3s;box-shadow:0 4px 20px rgba(0,0,0,0.04)}
+.addon-box.selected{border-color:var(--accent);background:#fafdf9;box-shadow:0 4px 20px rgba(142,157,142,0.15)}
+.addon-routine{display:flex;align-items:center;justify-content:center;gap:16px;padding:16px 20px;background:#f9f7f5;border-radius:10px;margin-bottom:24px}
+.routine-step{display:flex;align-items:center;gap:8px}
+.routine-num{background:var(--secondary);color:#fff;padding:4px 10px;border-radius:12px;font-size:11px;font-weight:600}
+.routine-text{font-size:13px;color:var(--text)}
+.routine-arrow{color:var(--accent);font-size:18px}
+.addon-grid{display:flex;align-items:flex-start;gap:24px}
+.addon-img{flex-shrink:0;text-align:center}
+.addon-img img{width:250px;height:250px;object-fit:contain;border-radius:12px;background:#f9f7f5;padding:12px;box-shadow:0 2px 10px rgba(0,0,0,0.06)}
+.addon-content{flex:1}
+.addon-product-name{font-size:16px;font-weight:600;color:var(--heading);margin-bottom:8px}
+.addon-price-display{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.addon-price-new{font-size:20px;font-weight:700;color:var(--secondary)}
+.addon-price-old{font-size:14px;color:var(--text-light);text-decoration:line-through}
+.addon-savings{font-size:11px;background:#eef5ee;color:#4a7c4a;padding:4px 10px;border-radius:12px;font-weight:600}
+.addon-social{font-size:13px;color:var(--secondary);font-weight:600;margin-bottom:12px}
+.addon-header{margin:16px 0 12px}
+.addon-add-btn{display:flex;align-items:center;justify-content:center;gap:10px;cursor:pointer;font-size:16px;font-weight:700;color:#fff;background:var(--secondary);padding:18px 24px;border-radius:12px;width:100%;border:none;transition:all 0.2s;box-shadow:0 4px 15px rgba(122,30,38,0.3);animation:subtlePulse 3s ease-in-out infinite}
+.addon-add-btn:hover{background:#5A1419;transform:translateY(-2px);box-shadow:0 6px 20px rgba(122,30,38,0.4)}
+.addon-add-icon{width:28px;height:28px;background:rgba(255,255,255,0.25);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;flex-shrink:0}
+.addon-add-btn.added{background:var(--accent);animation:none;box-shadow:0 4px 15px rgba(142,157,142,0.3)}
+.addon-add-btn.added:hover{background:#7a8f7a}
+.addon-add-btn input{display:none}
+.checkbox-custom{width:22px;height:22px;border:2px solid rgba(255,255,255,0.5);border-radius:6px;display:flex;align-items:center;justify-content:center;transition:all 0.2s;flex-shrink:0;background:rgba(255,255,255,0.2)}
+.addon-checkbox input:checked + .checkbox-custom{background:#fff;border-color:#fff}
+.addon-checkbox input:checked + .checkbox-custom::after{content:'✓';color:var(--accent);font-size:14px;font-weight:bold}
+.addon-title{flex:1}
+.addon-rec{color:var(--accent);font-weight:500;font-size:13px}
+.addon-price{background:var(--secondary);color:#fff;padding:6px 14px;border-radius:20px;font-size:14px;font-weight:600}
+.addon-bullets{list-style:none;margin:0 0 16px;padding:0}
+.addon-bullets li{font-size:13px;color:var(--text);padding:5px 0;display:flex;align-items:flex-start;gap:8px}
+.addon-desc{font-size:14px;color:var(--text);margin-bottom:8px;line-height:1.6}
+.addon-proof{font-size:12px;color:var(--text-light);text-align:center;margin-top:12px}
+.addon-added{display:none;margin-top:20px;padding:16px 20px;background:#eef5ee;border-radius:10px;border:1px solid #d4e5d4}
+.addon-added-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.addon-added-text{font-size:14px;font-weight:600;color:#4a7c4a}
+.addon-remove{background:#fff;border:1px solid #ddd;color:var(--text);font-size:14px;cursor:pointer;padding:12px 20px;border-radius:8px;font-weight:500;transition:all 0.2s;width:100%;text-align:center;margin-top:10px;display:block}
+.addon-remove:hover{background:#fee;border-color:var(--secondary);color:var(--secondary)}
+.addon-checkout{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--secondary);color:#fff;padding:14px 28px;border-radius:25px;text-decoration:none;font-size:14px;font-weight:600;transition:all 0.2s}
+.addon-checkout:hover{background:var(--accent);transform:translateY(-2px)}
+.addon-reassure{text-align:center;font-size:12px;color:var(--text-light);margin-top:20px}
+
+/* FAQ */
+.faq{padding:70px 0;background:#FDFCFB}
+.faq .sec-head{text-align:center;margin-bottom:40px}
+.faq .sec-head h2{color:var(--heading)}
+.faq-list{max-width:900px;margin:0 auto}
+.faq-item{border-bottom:1px solid #f0e6df}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:20px 0;cursor:pointer;font-size:15px;font-weight:500}
+.faq-q:hover{color:var(--secondary)}
+.faq-q .ico{width:28px;height:28px;background:#F7F4F1;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--secondary);transition:all .2s;flex-shrink:0}
+.faq-item.open .faq-q .ico{background:var(--accent);color:#fff;transform:rotate(45deg)}
+.faq-a{display:none;padding-bottom:20px;font-size:14px;color:var(--text-light);line-height:1.7}
+.faq-item.open .faq-a{display:block}
+
+/* Final Testimonials */
+.final-reviews{padding:60px 0;background:#fff}
+.final-reviews-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:900px;margin:0 auto}
+.final-rev{display:flex;gap:16px;padding:24px;background:#FDFCFB;border-radius:14px;border:1px solid #f0ebe6}
+.final-rev img{width:50px;height:50px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.final-rev-content .stars{color:var(--gold);font-size:12px;margin-bottom:6px}
+.final-rev-content p{font-size:13px;line-height:1.6;color:var(--text);margin-bottom:6px}
+.final-rev-content .name{font-size:12px;font-weight:600;color:var(--heading)}
+
+/* Featured In Section */
+.featured-in{padding:40px 0;background:#FDFCFB;text-align:center;border-top:1px solid #f0ebe6}
+.featured-logos{display:flex;justify-content:center;align-items:center;gap:50px;flex-wrap:wrap;max-width:800px;margin:0 auto}
+.featured-logo{opacity:0.9;transition:opacity 0.3s}
+.featured-logo:hover{opacity:1}
+.featured-logo img{height:32px;width:auto;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges}
+
+/* Final CTA */
+.final{padding:70px 0;background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;text-align:center}
+.final h2{color:#fff;font-size:2rem;margin-bottom:20px}
+.final>p{opacity:.9;font-size:15px;margin-bottom:0;max-width:500px;margin-left:auto;margin-right:auto}
+.final .btn-final{margin-top:32px;background:#fff;color:var(--primary);padding:18px 40px;border-radius:30px;text-decoration:none;font-size:16px;font-weight:600;display:inline-flex;align-items:center;gap:10px;transition:all .25s}
+.final .btn-final:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.final .btn-final svg{width:18px;height:18px}
+.final .urgency{margin-top:20px;font-size:13px;opacity:.85}
+
+/* Footer */
+footer{background:#FDFCFB;padding:30px 0;border-top:1px solid #f0ebe6}
+footer .container{text-align:center;font-size:12px;color:var(--text-light)}
+footer a{color:var(--text-light);text-decoration:none}
+footer a:hover{color:var(--secondary)}
+
+/* STICKY MOBILE CTA */
+.mobile-sticky{display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;padding:12px 16px;box-shadow:0 -4px 20px rgba(0,0,0,0.1);z-index:1000;transform:translateY(100%);transition:transform 0.3s ease}
+.mobile-sticky.show{transform:translateY(0)}
+.mobile-sticky-inner{display:flex;align-items:center;gap:12px}
+.mobile-sticky-text{flex:1;font-size:12px;line-height:1.3}
+.mobile-sticky-text strong{display:block;color:var(--primary);font-size:14px}
+.mobile-sticky .btn-sticky{background:var(--accent);color:#fff;padding:12px 20px;border-radius:24px;text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap}
+
+/* Responsive - Tablet */
+@media(max-width:900px){
+.hero-grid{grid-template-columns:1fr;gap:30px;text-align:center}
+.hero-content{order:2}
+.hero-product{order:1}
+.hero-checks{justify-content:center}
+.hero-quote{text-align:left}
+.btn-wrap{text-align:center}
+.benefits-img{order:1;text-align:center}
+.benefits-grid{grid-template-columns:1fr}
+.problem-grid{grid-template-columns:1fr}
+.problem-visual{order:-1;text-align:center}
+.how-grid{grid-template-columns:1fr}
+.how-media{order:-1}
+.upgrade-grid{grid-template-columns:1fr}
+.upgrade-img{padding:30px}
+.rev-grid{grid-template-columns:1fr 1fr}
+.ing-grid{grid-template-columns:repeat(2,1fr)}
+.final-reviews-grid{grid-template-columns:1fr}
+.addon-box{max-width:100%}
+.addon-grid{flex-direction:column;align-items:center;text-align:center}
+.addon-img{margin-bottom:8px}
+.addon-checkbox{justify-content:center;flex-wrap:wrap}
+.addon-social{text-align:center}
+.addon-proof{text-align:center}
+}
+
+/* Responsive - Mobile */
+@media(max-width:600px){
+
+/* ===== BASE STYLES ===== */
+body{font-size:14px}
+.container{padding:0 20px}
+
+/* ===== SPACING SYSTEM =====
+   Section padding: 44px
+   Header → content: 20px  
+   Content → button: 24px
+   Related items: 12px
+   Testimonials: 20px margin
+============================= */
+
+/* ===== ANNOUNCEMENT BAR ===== */
+.announcement{padding:12px 16px;font-size:12px;line-height:1.4}
+.proof-bar{display:none}
+
+/* ===== HERO SECTION ===== */
+.hero{padding:20px 0 24px}
+.hero-mobile-headline{display:block;text-align:center;margin-bottom:12px}
+.hero-mobile-headline .hero-badge{margin-bottom:10px;font-size:11px;padding:6px 14px}
+.hero-mobile-headline h1{font-size:1.75rem;line-height:1.15;margin-bottom:6px;letter-spacing:-0.02em}
+.hero-mobile-headline .hero-subhead{font-size:14px;color:var(--text-light);margin-bottom:0}
+.hero-badge-desktop,.hero-h1-desktop,.hero-subhead-desktop{display:none}
+.hero-sub{display:none}
+.hero-checks{display:none}
+.hero-quote{display:flex;padding:14px;gap:12px;margin:20px auto 0;max-width:340px;background:#fff;border-radius:12px;border:1px solid #f0ebe6;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+.hero-quote img{width:44px;height:44px}
+.hero-quote-text p{font-size:13px;line-height:1.5}
+.hero-quote-text .stars{font-size:11px;margin-bottom:4px}
+.hero-quote-text .name{font-size:11px}
+.hero-product{margin:0 -20px}
+.hero-img-wrap{max-width:100%;margin:0 auto;padding:0}
+.hero-img-wrap img{width:100%}
+.product-label-top{margin-bottom:8px;padding:0 20px}
+.product-label-top .product-label-title{font-size:10px;letter-spacing:0.12em}
+.product-label-top .product-label-shades{font-size:12px;color:var(--text)}
+.offer-callout{margin-top:10px;padding:0 20px}
+.offer-arrow{display:none}
+.offer-pill{display:none}
+.deal-badge{display:none}
+.offer-box{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 14px;padding:0;background:none;border-radius:0}
+.offer-box-title{display:none}
+.offer-box-item{font-size:12px;color:var(--text);line-height:1.4}
+.btn{padding:16px 32px;font-size:15px;max-width:100%;border-radius:30px;font-weight:600}
+.btn-wrap{margin-top:24px}
+.btn-sub{display:none}
+.btn-micro{font-size:12px;margin-top:10px;color:var(--text-light)}
+
+/* ===== TRUST STRIP ===== */
+.trust-strip{padding:16px 0;background:#fff;border-top:1px solid #f0ebe6;border-bottom:1px solid #f0ebe6}
+.trust-strip-inner{gap:0;flex-direction:row;justify-content:center;align-items:center}
+.trust-item{display:none}
+.trust-strip-inner::before{content:'★★★★★ 4.9/5 from 436+ reviews';font-size:13px;color:var(--text);font-weight:500}
+
+/* ===== SECTION HEADERS (Global) ===== */
+.sec-head{margin-bottom:20px;text-align:center}
+.sec-head h2{font-size:1.5rem;line-height:1.25;margin-bottom:8px}
+.sec-head p{font-size:13px;line-height:1.5;color:var(--text-light)}
+.sec-label{font-size:10px;padding:6px 14px;letter-spacing:0.05em;margin-bottom:10px}
+
+/* ===== BENEFITS SECTION ===== */
+.benefits{padding:44px 0 24px}
+.benefits-grid{gap:20px}
+.benefits-img-wrap{width:100%;max-width:100%;margin:30px auto 0;position:relative;padding:24px 0;min-height:260px;display:flex;align-items:center;justify-content:center}
+.benefits-img-wrap>img{max-width:160px;display:block}
+.floating-testimonial{position:absolute;background:#fff;padding:10px 12px;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,0.1);width:130px}
+.floating-testimonial.ft-top{top:0;left:5%}
+.floating-testimonial.ft-bottom{bottom:0;right:5%}
+.floating-testimonial p{font-size:10px;line-height:1.4;font-style:italic;margin:0}
+.ft-stars{font-size:9px;color:var(--gold);margin-bottom:4px}
+.ft-name{font-size:9px;font-weight:600;margin-top:5px;display:block}
+.benefits-content h2{font-size:1.5rem;margin-bottom:20px;text-align:center;line-height:1.25}
+.benefits-list{max-width:340px;margin:0 auto}
+.benefits-list li{padding:12px 0;font-size:14px;gap:12px;border-bottom:1px solid #f5f0eb}
+.benefits-list li:last-child{border-bottom:none}
+.benefit-icon{font-size:18px;width:28px;text-align:center;flex-shrink:0}
+.origin-box{display:none}
+.benefits-cta{margin-top:20px}
+.benefits-cta .btn{width:100%;max-width:100%}
+
+/* ===== HOW IT WORKS ===== */
+.how{padding:44px 0}
+.how-grid{gap:20px;display:flex;flex-direction:column}
+.how-content{order:1}
+.how-media{display:none}
+.how-content h2{font-size:1.5rem;margin-bottom:10px;line-height:1.25}
+.how-intro{font-size:13px;margin-bottom:20px;line-height:1.6}
+.how-steps{margin-bottom:0}
+.how-step{padding:12px 0;gap:12px}
+.how-step .step-num{width:28px;height:28px;font-size:12px}
+.how-step h4{font-size:14px}
+.how-step p{font-size:12px}
+.media-collage-mobile{display:grid;grid-template-columns:1fr 1fr;max-width:300px;gap:8px;margin:20px auto}
+.media-collage{max-width:300px;gap:8px;margin:0 auto}
+.collage-left,.collage-right{gap:8px}
+.collage-img-br{min-height:140px}
+.mini-testimonial{padding:12px 14px;font-size:13px;gap:10px;margin-top:20px}
+.mini-testimonial img{width:36px;height:36px}
+.mini-testimonial .stars{font-size:11px}
+.mini-testimonial span{font-size:11px}
+.how-content .btn{margin-top:24px}
+
+/* ===== INGREDIENTS SECTION ===== */
+.ing-bg{padding:44px 0}
+.ing-head{margin-bottom:20px}
+.ing-grid{grid-template-columns:1fr;gap:12px}
+.ing-card{padding:20px 18px}
+.ing-icon{width:48px;height:48px;font-size:20px;margin-bottom:12px}
+.ing-card h4{font-size:14px;margin-bottom:12px}
+.ing-list li{font-size:12px;padding:8px 0;padding-left:16px}
+.ing-link{font-size:13px;padding:12px 20px;margin-top:24px}
+
+/* ===== REVIEWS SECTION ===== */
+.reviews{padding:44px 0}
+.reviews .sec-head{margin-bottom:20px}
+.rev-grid-desktop{display:none}
+.rev-carousel{display:block;margin-top:0}
+.rev-carousel-track .rev-card{display:none !important}
+.rev-carousel-track .rev-card.active{display:block !important;animation:fadeIn 0.4s ease}
+.rev-card{padding:20px}
+.rev-card::before{font-size:36px;top:14px;right:16px}
+.rev-head{gap:12px;margin-bottom:10px}
+.rev-head img{width:44px;height:44px}
+.rev-head h5{font-size:14px}
+.rev-head .badge{font-size:10px}
+.rev-card .stars{font-size:12px;margin-bottom:8px}
+.rev-card>p{font-size:13px;line-height:1.6}
+.rev-carousel-nav{margin-top:16px;gap:12px}
+.rev-arrow{width:34px;height:34px;font-size:18px}
+.rev-dot{width:8px;height:8px}
+.rev-dot.active{width:24px}
+.reviews-cta{margin-top:24px}
+.reviews-count{font-size:13px;margin-bottom:16px}
+
+/* UGC Section */
+.ugc-section{margin-top:32px}
+.ugc-label{font-size:11px;margin-bottom:16px;letter-spacing:0.08em}
+.ugc-grid{gap:14px}
+.ugc-card{border-radius:12px}
+.ugc-info{padding:14px}
+.ugc-info p{font-size:13px;margin-bottom:8px}
+.ugc-handle{font-size:12px}
+
+/* ===== PROBLEM SECTION ===== */
+.problem{padding:44px 0}
+.problem-header{margin-bottom:20px}
+.problem-header h2{font-size:1.4rem;line-height:1.3}
+.problem-header p{font-size:13px;line-height:1.5;margin-top:8px}
+.problem-visual{margin-bottom:24px;text-align:center;display:flex;justify-content:center}
+.problem-visual img{max-width:300px;width:85%;margin:0 auto}
+.impact-stat-clean{margin-bottom:20px;text-align:center}
+.stat-number{font-size:1.25rem}
+.stat-label{font-size:12px;margin-top:4px}
+.problem-stats{margin-bottom:16px}
+.problem-stats li{font-size:13px;padding:10px 0}
+.switch-quote-simple{gap:12px;margin-top:20px;margin-bottom:24px}
+.switch-quote-simple img{width:40px;height:40px}
+.switch-quote-simple p{font-size:13px}
+.switch-quote-simple span{font-size:11px}
+.problem .btn{margin-top:0}
+
+/* ===== ADD-ON SECTION ===== */
+.addon{padding:44px 0}
+.addon-header-text{margin-bottom:20px;text-align:center}
+.addon-header-text h3{font-size:1.35rem;line-height:1.3;margin-bottom:6px}
+.addon-subhead{font-size:13px;line-height:1.5}
+.addon-label{font-size:10px;padding:6px 14px;margin-bottom:10px;display:inline-block}
+.addon-box{padding:20px;border-radius:16px}
+.addon-routine{flex-direction:column;gap:8px;padding:14px 16px;margin-bottom:20px}
+.routine-step{gap:8px}
+.routine-num{font-size:10px;padding:3px 8px}
+.routine-text{font-size:12px}
+.routine-arrow{transform:rotate(90deg);font-size:14px}
+.addon-grid{flex-direction:column;gap:16px;align-items:center}
+.addon-img{width:100%;display:flex;justify-content:center}
+.addon-img img{width:180px;height:180px;padding:10px}
+.addon-content{width:100%;text-align:center}
+.addon-product-name{font-size:15px;margin-bottom:6px}
+.addon-price-display{justify-content:center;gap:8px;margin-bottom:12px}
+.addon-price-new{font-size:18px}
+.addon-price-old{font-size:13px}
+.addon-savings{font-size:10px;padding:3px 8px}
+.addon-bullets{margin:0 0 14px;text-align:left;max-width:280px;margin-left:auto;margin-right:auto}
+.addon-bullets li{font-size:12px;padding:4px 0}
+.addon-header{margin:14px 0 10px}
+.addon-add-btn{padding:16px 20px;font-size:15px;border-radius:12px}
+.addon-add-icon{width:24px;height:24px;font-size:18px}
+.addon-proof{font-size:11px;margin-top:10px}
+.addon-added{margin-top:14px;padding:14px 16px}
+.addon-added-top{margin-bottom:10px;flex-wrap:wrap;gap:8px}
+.addon-added-text{font-size:12px}
+.addon-remove{font-size:13px;padding:12px 16px}
+.addon-checkout{padding:14px 24px;font-size:14px}
+.addon-reassure{font-size:11px;margin-top:14px;text-align:center;color:var(--text-light)}
+
+/* ===== FAQ SECTION ===== */
+.faq{padding:44px 0}
+.faq h2{font-size:1.5rem;margin-bottom:20px}
+.faq-q{padding:14px 0;font-size:14px}
+.faq-q .ico{width:28px;height:28px;font-size:18px}
+.faq-a{font-size:13px;padding-bottom:14px;line-height:1.6}
+
+/* ===== FINAL REVIEWS ===== */
+.final-reviews{padding:32px 0}
+.final-reviews-grid{gap:12px}
+.final-rev{padding:16px;gap:12px}
+.final-rev img{width:40px;height:40px}
+.final-rev-content .stars{font-size:11px;margin-bottom:4px}
+.final-rev-content p{font-size:12px;margin-bottom:4px}
+.final-rev-content .name{font-size:11px}
+
+/* ===== FEATURED IN ===== */
+.featured-in{padding:28px 0}
+.featured-logos{gap:20px}
+.featured-logo{display:none;opacity:0;transition:opacity 0.4s ease}
+.featured-logo.active{display:block;opacity:0.9}
+.featured-logo img{height:24px;width:auto}
+
+/* ===== FINAL CTA ===== */
+.final{padding:44px 0}
+.final h2{font-size:1.5rem;margin-bottom:12px;line-height:1.25}
+.final>p{font-size:14px}
+.final .btn-final{margin-top:24px;padding:16px 28px;font-size:15px}
+.final .urgency{margin-top:14px;font-size:12px}
+
+/* ===== MOBILE STICKY BAR ===== */
+.mobile-sticky{display:block}
+.mobile-sticky-inner{gap:12px;padding:12px 16px}
+.mobile-sticky-text{font-size:12px}
+.mobile-sticky-text strong{font-size:14px}
+.mobile-sticky .btn-sticky{padding:12px 18px;font-size:13px;border-radius:25px}
+body{padding-bottom:72px}
+
+/* ===== FOOTER ===== */
+.footer{padding:24px 0 16px}
+.footer p{font-size:12px}
+.footer-links{font-size:12px}
+}
+
+/* Modal Styles */
+.ingredient-modal{position:fixed;top:0;left:0;width:100%;height:100%;z-index:9999;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:all 0.3s}
+.ingredient-modal.open{opacity:1;visibility:visible}
+.ingredient-modal-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);cursor:pointer}
+.ingredient-modal-content{position:relative;background:#fff;border-radius:20px;max-width:700px;width:90%;max-height:85vh;overflow-y:auto;padding:40px;box-shadow:0 20px 60px rgba(0,0,0,0.2);transform:translateY(20px);transition:transform 0.3s}
+.ingredient-modal.open .ingredient-modal-content{transform:translateY(0)}
+.modal-close{position:absolute;top:15px;right:15px;width:36px;height:36px;border:none;background:#f5f5f5;border-radius:50%;font-size:24px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#666;transition:all 0.2s}
+.modal-close:hover{background:#eee;color:#333}
+.ingredient-modal-content h3{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--heading);text-align:center;margin-bottom:8px}
+.modal-subtitle{text-align:center;color:var(--text-light);font-size:14px;margin-bottom:30px;padding-bottom:20px;border-bottom:1px solid #f0ebe6}
+.ingredient-list{display:grid;gap:20px}
+.ingredient-item{padding:16px 20px;background:#FDFCFB;border-radius:12px;border-left:3px solid var(--accent)}
+.ingredient-item h4{font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;color:var(--heading);margin-bottom:6px}
+.ingredient-item p{font-size:13px;color:var(--text-light);line-height:1.6;margin:0}
+
+@media(max-width:600px){
+.ingredient-modal-content{padding:24px;max-height:90vh}
+.ingredient-modal-content h3{font-size:1.4rem}
+.modal-subtitle{font-size:13px;margin-bottom:20px;padding-bottom:15px}
+.ingredient-item{padding:14px 16px}
+.ingredient-item h4{font-size:13px}
+.ingredient-item p{font-size:12px}
+}
+
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.pulse{animation:pulse 2s infinite}
+    </style>
+</head>
+<body>
+
+<!-- ========== 1. ANNOUNCEMENT BAR ========== -->
+<div class="announcement">Try our 3 best-selling shades — $30 (a $90 value) + Free Shipping</div>
+
+<!-- ========== 2. PROOF BAR ========== -->
+<div class="proof-bar">
+    <div><span class="stars">★★★★★</span> <strong>4.9/5</strong> from 436+ reviews</div>
+    <div><strong>12,000+</strong> happy customers</div>
+    <div>🇨🇦 Handmade in BC, Canada</div>
+</div>
+
+<!-- ========== 3. HERO ========== -->
+<section class="hero">
+    <div class="container">
+        <!-- Mobile-only headline (shows above product on mobile) -->
+        <div class="hero-mobile-headline">
+            <div class="hero-badge">⭐ 436+ Five-Star Reviews</div>
+            <h1>Natural Makeup That Actually Works — <em>Finally</em></h1>
+            <p class="hero-subhead">Try our 3 best-selling shades in one Starter Set</p>
+        </div>
+        
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge hero-badge-desktop">⭐ 436+ Five-Star Reviews</div>
+                <h1 class="hero-h1-desktop">Natural Makeup That Actually Works — <em>Finally</em></h1>
+                <p class="hero-subhead hero-subhead-desktop">Try our 3 best-selling shades in one Starter Set</p>
+                <p class="hero-sub"><strong>3 full-size multi-use creams</strong> for lips, cheeks & eyes. Find your perfect shade, made with real fruit pigments.</p>
+                <div class="hero-checks">
+                    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Coloured with Real Fruit</span>
+                    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> 100% Natural & Vegan</span>
+                    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> 🇨🇦 Handmade in Canada</span>
+                </div>
+                <div class="hero-quote">
+                    <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Multi_Testimonial_2.png?v=1754413731&width=80&format=webp&quality=70" alt="Jennifer" loading="eager">
+                    <div class="hero-quote-text">
+                        <div class="stars">★★★★★</div>
+                        <p>"I've tried SO many 'clean' brands. This is the first one that actually stays on and looks natural!"</p>
+                        <span class="name">— Jennifer T.</span>
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <a href="https://naturallywyld.ca/cart/46636732252417:1?discount=FREESHIPMC&checkout" class="btn checkout-link">Get All 3 Shades — $30 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    <div class="btn-sub">
+                        <span>Loved by 12,000+ customers</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-product">
+                <div class="product-label-top">
+                    <span class="product-label-title">THE STARTER SET</span>
+                    <span class="product-label-shades">Hazelnut · Fallen Leaves · Raspberry Kiss</span>
+                </div>
+                <div class="hero-img-wrap">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/MCC_Landing_page_header_Mobile_4.png?v=1769199279">
+                        <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/MCC_Landing_page_header_3.png?v=1769195586" 
+                             alt="Multi-Colour Cream Starter Set" 
+                             fetchpriority="high">
+                    </picture>
+                </div>
+                <div class="offer-callout">
+                    <span class="offer-arrow">↑</span>
+                    <span class="deal-badge">SAVE $60 • $90 VALUE</span>
+                    <div class="offer-box">
+                        <span class="offer-box-title">What's in the Starter Set:</span>
+                        <span class="offer-box-item">✓ Our 3 best-selling shades</span>
+                        <span class="offer-box-item">✓ Full-size tins (7g each)</span>
+                        <span class="offer-box-item">✓ Free shipping</span>
+                    </div>
+                </div>
+                <!-- Mobile CTA and Testimonial -->
+                <div class="hero-mobile-cta">
+                    <a href="https://naturallywyld.ca/cart/46636732252417:1?discount=FREESHIPMC&checkout" class="btn checkout-link">Get All 3 Shades — $30 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                </div>
+                <div class="hero-mobile-testimonial">
+                    <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Multi_Testimonial_2.png?v=1754413731&width=60" alt="Jennifer">
+                    <div class="hmt-content">
+                        <div class="hmt-stars">★★★★★</div>
+                        <p>"I've tried SO many 'clean' brands. This is the first one that actually stays on and looks natural!"</p>
+                        <span class="hmt-name">— Jennifer T.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 4. TRUST STRIP ========== -->
+<div class="trust-strip">
+    <div class="container">
+        <div class="trust-strip-inner">
+            <div class="trust-item"><div class="trust-icon">🍃</div><span>100% Natural Ingredients</span></div>
+            <div class="trust-item"><div class="trust-icon">🐰</div><span>Cruelty-Free & Vegan</span></div>
+            <div class="trust-item"><div class="trust-icon">♻️</div><span>Eco-Friendly Packaging</span></div>
+            <div class="trust-item"><div class="trust-icon">🇨🇦</div><span>Made in Canada</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- ========== 5. BENEFITS SECTION ========== -->
+<section class="benefits">
+    <div class="container">
+        <div class="benefits-grid">
+            <div class="benefits-img">
+                <div class="benefits-img-wrap">
+                    <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Untitled_design_9.png?v=1752707730&width=300&format=webp&quality=75" alt="Natural Makeup Look" loading="lazy">
+                    <!-- Floating Testimonial 1 - Top Left -->
+                    <div class="floating-testimonial ft-top">
+                        <div class="ft-stars">★★★★★</div>
+                        <p>"Lasts for hours — I use it as eye shadow!"</p>
+                        <span class="ft-name">— Leanne</span>
+                    </div>
+                    <!-- Floating Testimonial 2 - Bottom Right -->
+                    <div class="floating-testimonial ft-bottom">
+                        <div class="ft-stars">★★★★★</div>
+                        <p>"Feels good on my sensitive skin"</p>
+                        <span class="ft-name">— Darshika</span>
+                    </div>
+                </div>
+            </div>
+            <div class="benefits-content">
+                <h2>Why We're Not Like Other Makeup</h2>
+                <ul class="benefits-list">
+                    <li>
+                        <span class="benefit-icon">🍓</span>
+                        <div><strong>Coloured with real fruits & veggies</strong> — not synthetic dyes</div>
+                    </li>
+                    <li>
+                        <span class="benefit-icon">🍃</span>
+                        <div><strong>100% natural ingredients</strong> you can actually pronounce</div>
+                    </li>
+                    <li>
+                        <span class="benefit-icon">💧</span>
+                        <div><strong>Nourishing skincare + makeup</strong> in one simple product</div>
+                    </li>
+                    <li>
+                        <span class="benefit-icon">✨</span>
+                        <div><strong>3 products in 1</strong> — for lips, cheeks, and eyes</div>
+                    </li>
+                    <li>
+                        <span class="benefit-icon">⏱️</span>
+                        <div><strong>Long-lasting colour</strong> — buildable formula that stays put</div>
+                    </li>
+                    <li>
+                        <span class="benefit-icon">🐰</span>
+                        <div><strong>Vegan & cruelty-free</strong> — never tested on animals</div>
+                    </li>
+                    <li>
+                        <span class="benefit-icon">♻️</span>
+                        <div><strong>Zero-waste packaging</strong> — recyclable aluminium tins</div>
+                    </li>
+                </ul>
+                <div class="origin-box">
+                    <strong>Handmade in Okanagan, BC</strong> — we started Naturally Wyld because we wanted makeup that's good for you AND good for the planet.
+                </div>
+                <div class="benefits-cta">
+                    <a href="https://naturallywyld.ca/cart/46636732252417:1?discount=FREESHIPMC&checkout" class="btn checkout-link">Get All 3 Shades — $30 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 6. HOW IT WORKS ========== -->
+<section class="how">
+    <div class="container">
+        <div class="how-grid">
+            <div class="how-content">
+                <h2>Your Entire Makeup Routine in 30 Seconds</h2>
+                <p class="how-intro">Say goodbye to cluttered makeup bags. This minimalist multitasker works as a lipstick, blush, and eye tint—all in one creamy formula that melts into skin for an effortless glow.</p>
+                <div class="how-steps">
+                    <div class="how-step">
+                        <span class="step-num">1</span>
+                        <div>
+                            <h4>Choose Your Shade</h4>
+                            <p>Raspberry Kiss, Hazelnut, or Fallen Leaves</p>
+                        </div>
+                    </div>
+                    <div class="how-step">
+                        <span class="step-num">2</span>
+                        <div>
+                            <h4>Swipe & Blend</h4>
+                            <p>Use your fingers or a beauty blender</p>
+                        </div>
+                    </div>
+                    <div class="how-step">
+                        <span class="step-num">3</span>
+                        <div>
+                            <h4>Glow All Day</h4>
+                            <p>Natural, long-lasting colour</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collage moved here on mobile -->
+                <div class="media-collage media-collage-mobile">
+                    <div class="collage-left">
+                        <div class="collage-video">
+                            <video muted loop playsinline preload="metadata" onclick="this.paused ? this.play() : this.pause(); this.parentElement.classList.toggle('paused')">
+                                <source src="https://cdn.shopify.com/videos/c/o/v/e17d3e8b83de41b0a917a84369de33a0.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <span class="play-icon">▶</span>
+                                <span class="pause-icon">❚❚</span>
+                            </div>
+                        </div>
+                        <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Meta_creative_multi_colour_cream_2.png?v=1754005498&width=150&format=webp&quality=70" alt="Customer" class="collage-img-bl" loading="lazy">
+                    </div>
+                    <div class="collage-right">
+                        <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/dd4871ac-387a-48b3-8e91-1555564e4e8d_314decd0-375b-4c0e-bbf1-44cb5b94fca5.png?v=1754009078&width=150&format=webp&quality=70" alt="Customer" class="collage-img-tr" loading="lazy">
+                        <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/0dbcea8e-8047-497c-b978-1c78ab24684b.png?v=1754008491&width=150&format=webp&quality=70" alt="Customer" class="collage-img-br" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="mini-testimonial">
+                    <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Multi_Testimonial.png?v=1754413789&width=80" alt="Customer">
+                    <div>
+                        <span class="stars">★★★★★</span>
+                        "So quick! I do my whole face in under a minute now."
+                        <span>— Emily</span>
+                    </div>
+                </div>
+                <a href="https://naturallywyld.ca/cart/46636732252417:1?discount=FREESHIPMC&checkout" class="btn checkout-link" style="margin-top:24px">Get All 3 Shades — $30 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+            <div class="how-media">
+                <div class="media-collage">
+                    <div class="collage-left">
+                        <div class="collage-video">
+                            <video muted loop playsinline preload="metadata" onclick="this.paused ? this.play() : this.pause(); this.parentElement.classList.toggle('paused')">
+                                <source src="https://cdn.shopify.com/videos/c/o/v/e17d3e8b83de41b0a917a84369de33a0.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <span class="play-icon">▶</span>
+                                <span class="pause-icon">❚❚</span>
+                            </div>
+                        </div>
+                        <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Meta_creative_multi_colour_cream_2.png?v=1754005498&width=150&format=webp&quality=70" alt="Customer" class="collage-img-bl" loading="lazy">
+                    </div>
+                    <div class="collage-right">
+                        <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/dd4871ac-387a-48b3-8e91-1555564e4e8d_314decd0-375b-4c0e-bbf1-44cb5b94fca5.png?v=1754009078&width=150&format=webp&quality=70" alt="Customer" class="collage-img-tr" loading="lazy">
+                        <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/0dbcea8e-8047-497c-b978-1c78ab24684b.png?v=1754008491&width=150&format=webp&quality=70" alt="Customer" class="collage-img-br" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 8. INGREDIENTS ========== -->
+<section class="ingredients">
+    <div class="ing-bg">
+        <div class="ing-overlay"></div>
+        <div class="container ing-container">
+            <div class="sec-head ing-head">
+                <span class="sec-label">Transparency First</span>
+                <h2>Ingredients You Can Actually Pronounce</h2>
+                <p>No hidden nasties. Just clean, effective ingredients.</p>
+            </div>
+            <div class="ing-grid">
+                <div class="ing-card">
+                    <div class="ing-icon">🍇</div>
+                    <h4>Fruit & Plant Pigments</h4>
+                    <ul class="ing-list">
+                        <li>Beet Root Powder</li>
+                        <li>Bilberry Extract</li>
+                        <li>Raspberry Powder</li>
+                    </ul>
+                </div>
+                <div class="ing-card">
+                    <div class="ing-icon">🍃</div>
+                    <h4>Skin-Loving Botanicals</h4>
+                    <ul class="ing-list">
+                        <li>Jojoba Oil</li>
+                        <li>Green Tea Extract</li>
+                        <li>Olive Squalane</li>
+                    </ul>
+                </div>
+                <div class="ing-card">
+                    <div class="ing-icon">💧</div>
+                    <h4>Hydrating Superstars</h4>
+                    <ul class="ing-list">
+                        <li>Shea Butter</li>
+                        <li>Hyaluronic Acid</li>
+                        <li>Vitamin E</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:30px">
+                <a href="#" class="ing-link" onclick="document.getElementById('ingredientModal').classList.add('open'); return false;">View Full Ingredient List →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 9. TESTIMONIALS SECTION ========== -->
+<section class="reviews">
+    <div class="container">
+        <div class="sec-head">
+            <span class="sec-label">Real Reviews</span>
+            <h2>Don't Just Take Our Word For It</h2>
+            <p>Join 12,000+ customers who've made the switch to clean beauty that works.</p>
+        </div>
+        
+        <!-- Featured Reviews - Carousel on Mobile -->
+        <div class="rev-carousel">
+            <div class="rev-carousel-track">
+                <div class="rev-card">
+                    <div class="rev-head"><img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Multi_Testimonial_3.png?v=1768530791&width=80&format=webp&quality=70" alt="Sarah" loading="lazy"><div><h5>Sarah</h5></div></div>
+                    <div class="stars">★★★★★</div>
+                    <p>"This just makes me feel pretty without all the effort, you know? I swipe it on in the morning and look awake and put together, even if I barely slept. It gives this soft glow that looks really natural. And knowing it's clean just makes me feel better about wearing it."</p>
+                </div>
+                <div class="rev-card">
+                    <div class="rev-head"><img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Multi_Testimonial_4.png?v=1768531589&width=80&format=webp&quality=70" alt="Mya" loading="lazy"><div><h5>Mya</h5></div></div>
+                    <div class="stars">★★★★★</div>
+                    <p>"Okay but why did no one tell me this would replace like 3 products in one?? 😍 I use it on my cheeks, lips, and even dab a bit on my lids. It blends fast, looks cute, and doesn't feel heavy or greasy. Love that I can just throw it in my bag and go."</p>
+                </div>
+                <div class="rev-card">
+                    <div class="rev-head"><img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Multi_Testimonial_5.png?v=1768533442&width=80&format=webp&quality=70" alt="Brenna" loading="lazy"><div><h5>Brenna</h5></div></div>
+                    <div class="stars">★★★★★</div>
+                    <p>"Been slowly swapping out all my makeup for cleaner stuff, and this one's def staying. I love that it's made with actual fruit and oils instead of weird chemicals. It goes on super smooth and doesn't irritate my skin at all. Also obsessed with Raspberry Kiss — it's just easy and feels good to use."</p>
+                </div>
+            </div>
+            <div class="rev-carousel-nav">
+                <button class="rev-arrow rev-prev">‹</button>
+                <div class="rev-carousel-dots">
+                    <button class="rev-dot active" data-index="0"></button>
+                    <button class="rev-dot" data-index="1"></button>
+                    <button class="rev-dot" data-index="2"></button>
+                </div>
+                <button class="rev-arrow rev-next">›</button>
+            </div>
+        </div>
+        
+        <!-- Desktop Grid (hidden on mobile) -->
+        <div class="rev-grid-desktop">
+            <div class="rev-card">
+                <div class="rev-head"><img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Multi_Testimonial_3.png?v=1768530791&width=80&format=webp&quality=70" alt="Sarah" loading="lazy"><div><h5>Sarah</h5></div></div>
+                <div class="stars">★★★★★</div>
+                <p>"This just makes me feel pretty without all the effort, you know? I swipe it on in the morning and look awake and put together, even if I barely slept. It gives this soft glow that looks really natural. And knowing it's clean just makes me feel better about wearing it."</p>
+            </div>
+            <div class="rev-card">
+                <div class="rev-head"><img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Multi_Testimonial_4.png?v=1768531589&width=80&format=webp&quality=70" alt="Mya" loading="lazy"><div><h5>Mya</h5></div></div>
+                <div class="stars">★★★★★</div>
+                <p>"Okay but why did no one tell me this would replace like 3 products in one?? 😍 I use it on my cheeks, lips, and even dab a bit on my lids. It blends fast, looks cute, and doesn't feel heavy or greasy. Love that I can just throw it in my bag and go."</p>
+            </div>
+            <div class="rev-card">
+                <div class="rev-head"><img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Multi_Testimonial_5.png?v=1768533442&width=80&format=webp&quality=70" alt="Brenna" loading="lazy"><div><h5>Brenna</h5></div></div>
+                <div class="stars">★★★★★</div>
+                <p>"Been slowly swapping out all my makeup for cleaner stuff, and this one's def staying. I love that it's made with actual fruit and oils instead of weird chemicals. It goes on super smooth and doesn't irritate my skin at all. Also obsessed with Raspberry Kiss — it's just easy and feels good to use."</p>
+            </div>
+        </div>
+        
+        <!-- UGC Video Section -->
+        <div class="ugc-section">
+            <div class="ugc-label">Real customers, real results</div>
+            <div class="ugc-grid ugc-grid-2">
+                <div class="ugc-card">
+                    <div class="collage-video" style="aspect-ratio:9/12;border-radius:12px 12px 0 0">
+                        <video muted loop playsinline preload="metadata" onclick="this.paused ? this.play() : this.pause(); this.parentElement.classList.toggle('paused')">
+                            <source src="https://cdn.shopify.com/videos/c/o/v/7e802f23e19a4cd294628eaddbbba0b0.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon">❚❚</span>
+                        </div>
+                        <span class="ugc-duration">0:32</span>
+                    </div>
+                    <div class="ugc-info">
+                        <p>"I use this every single day — one swipe and I'm out the door!"</p>
+                        <span class="ugc-handle">— Jamye</span>
+                    </div>
+                </div>
+                <div class="ugc-card">
+                    <div class="collage-video" style="aspect-ratio:9/12;border-radius:12px 12px 0 0">
+                        <video muted loop playsinline preload="metadata" onclick="this.paused ? this.play() : this.pause(); this.parentElement.classList.toggle('paused')">
+                            <source src="https://cdn.shopify.com/videos/c/o/v/505e5649e2de4b8c95aea88e03823bcb.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon">❚❚</span>
+                        </div>
+                        <span class="ugc-duration">0:45</span>
+                    </div>
+                    <div class="ugc-info">
+                        <p>"Currently my favourite! A hidden gem in the market."</p>
+                        <span class="ugc-handle">— Shaye</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="reviews-cta">
+            <p class="reviews-count">★★★★★ 4.9/5 average rating</p>
+            <a href="https://naturallywyld.ca/cart/46636732252417:1?discount=FREESHIPMC&checkout" class="btn checkout-link">Get All 3 Shades — $30 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 9. PROBLEM SECTION (Moved Down) ========== -->
+<section class="problem">
+    <div class="container">
+        <div class="problem-header">
+            <h2>Most Makeup Still Uses Plastic Tubes, Toxic Fillers & Endocrine Disruptors.</h2>
+            <p>Even "natural" brands cut corners — using plastic tubes, synthetic colours, or sneaky petroleum-based ingredients. You deserve better.</p>
+        </div>
+        <div class="problem-grid">
+            <div class="problem-visual">
+                <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Multi_colour_cream_8.png?v=1752173556&width=400" alt="Multi-Colour Cream" loading="lazy">
+            </div>
+            <div class="problem-content">
+                <div class="impact-stat-clean">
+                    <span class="stat-number">8,652+</span>
+                    <span class="stat-label">Units Saved From The Landfill</span>
+                </div>
+                <ul class="problem-stats">
+                    <li><span>🏭</span> 120B+ units of beauty packaging are thrown away every year</li>
+                    <li><span>⚠️</span> 168+ chemicals are in the average person's daily routine</li>
+                    <li><span>❌</span> 70% of "natural" makeup still uses plastics or hormone disruptors</li>
+                </ul>
+                <div class="switch-quote-simple">
+                    <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Multi_Testimonial_1.png?v=1754413761&width=60" alt="Customer">
+                    <div>
+                        <p>"Happy to finally have non-toxic lipstick. I love that it's Canadian, clean, and actually beautiful!"</p>
+                        <span>— Anna</span>
+                    </div>
+                </div>
+                <a href="https://naturallywyld.ca/cart/46636732252417:1?discount=FREESHIPMC&checkout" class="btn checkout-link" style="margin-top:28px">Make the Switch — All 3 for $30 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 10. ADD-ON SECTION ========== -->
+<section class="addon" id="addon">
+    <div class="container">
+        <div class="addon-header-text">
+            <span class="addon-label">Complete Your Routine</span>
+            <h3>The Clean Way to Remove It All</h3>
+            <p class="addon-subhead">Your Multi-Colour Creams deserve a matcha-infused cleanser — just as clean and gentle.</p>
+        </div>
+        <div class="addon-box" id="addonBox">
+            <div class="addon-routine">
+                <div class="routine-step">
+                    <span class="routine-num">AM</span>
+                    <span class="routine-text">Apply your Multi-Colour Creams</span>
+                </div>
+                <div class="routine-arrow">→</div>
+                <div class="routine-step">
+                    <span class="routine-num">PM</span>
+                    <span class="routine-text">Remove it with Matcha Melt</span>
+                </div>
+            </div>
+            <div class="addon-grid">
+                <div class="addon-img">
+                    <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Naturally_Wyld_Makeup_MeltWithMatcha.webp?v=1773375771" alt="Matcha Makeup Melt" loading="lazy">
+                </div>
+                <div class="addon-content">
+                    <div class="addon-product-name">Matcha Makeup Melt</div>
+                    <div class="addon-price-display">
+                        <span class="addon-price-new">+$30</span>
+                        <span class="addon-price-old">$39.95</span>
+                        <span class="addon-savings">Save $9.95</span>
+                    </div>
+                    <ul class="addon-bullets">
+                        <li>🍵 Matcha-infused — antioxidants protect your skin while it cleans</li>
+                        <li>💧 Dissolves even waterproof makeup without rubbing</li>
+                        <li>🍃 Same clean, natural ingredients — no harsh chemicals</li>
+                        <li>👁️ Safe for sensitive skin and eye area</li>
+                    </ul>
+                    <div class="addon-header">
+                        <button class="addon-add-btn" id="addonAddBtn" onclick="toggleAddonBtn()">
+                            <span class="addon-add-icon">+</span>
+                            <span>Add Matcha Melt — +$30</span>
+                        </button>
+                    </div>
+                    <p class="addon-proof">🔥 73% of customers add this · <strong>Upgrade & get tracked priority shipping FREE</strong></p>
+                </div>
+            </div>
+            <div class="addon-added" id="addonAdded">
+                <div class="addon-added-top">
+                    <span class="addon-added-text">✓ Matcha Melt added</span>
+                </div>
+                <a href="https://naturallywyld.ca/cart/46636732252417:1,48679354171649:1?discount=FREESHIPMC&checkout" class="addon-checkout">Get the Complete Set — $60 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                <button class="addon-remove" onclick="removeAddon()">Remove Matcha Melt</button>
+            </div>
+        </div>
+        <p class="addon-reassure">You can review or remove this anytime at checkout.</p>
+    </div>
+</section>
+
+<script>
+const STARTER_SET_URL = 'https://naturallywyld.ca/cart/46636732252417:1?discount=FREESHIPMC&checkout';
+const BUNDLE_URL = 'https://naturallywyld.ca/cart/46636732252417:1,48679354171649:1?discount=FREESHIPMC&checkout';
+
+const BUTTON_TEXT = {
+    starter: {
+        hero: 'Get All 3 Shades — $30',
+        benefits: 'Get All 3 Shades — $30',
+        howItWorks: 'Get All 3 Shades — $30',
+        reviews: 'Get All 3 Shades — $30',
+        problem: 'Make the Switch — All 3 for $30',
+        final: 'Get All 3 Shades — $30',
+        sticky: 'Get All 3 — $30'
+    },
+    bundle: {
+        hero: 'Get All 3 Shades + Cleanser — $60',
+        benefits: 'Get All 3 Shades + Cleanser — $60',
+        howItWorks: 'Get All 3 Shades + Cleanser — $60',
+        reviews: 'Get All 3 Shades + Cleanser — $60',
+        problem: 'Make the Switch — All 3 + Cleanser $60',
+        final: 'Get All 3 Shades + Cleanser — $60',
+        sticky: 'Get All 3 + Cleanser — $60'
+    }
+};
+
+const arrowSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+const arrowSvgLg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+
+function updateAllCheckoutLinks(includeAddon) {
+    const checkoutUrl = includeAddon ? BUNDLE_URL : STARTER_SET_URL;
+    const text = includeAddon ? BUTTON_TEXT.bundle : BUTTON_TEXT.starter;
+    
+    document.querySelectorAll('.checkout-link').forEach(link => {
+        link.href = checkoutUrl;
+    });
+    
+    // Update button text (using data attributes to identify buttons)
+    const heroBtn = document.querySelector('.hero .checkout-link');
+    const benefitsBtn = document.querySelector('.benefits .checkout-link');
+    const howBtn = document.querySelector('.how .checkout-link');
+    const reviewsBtn = document.querySelector('.reviews .checkout-link');
+    const problemBtn = document.querySelector('.problem .checkout-link');
+    const finalBtn = document.querySelector('.final .checkout-link');
+    const stickyBtn = document.querySelector('.mobile-sticky .checkout-link');
+    
+    if (heroBtn) heroBtn.innerHTML = text.hero + ' ' + arrowSvg;
+    if (benefitsBtn) benefitsBtn.innerHTML = text.benefits + ' ' + arrowSvg;
+    if (howBtn) howBtn.innerHTML = text.howItWorks + ' ' + arrowSvg;
+    if (reviewsBtn) reviewsBtn.innerHTML = text.reviews + ' ' + arrowSvg;
+    if (problemBtn) problemBtn.innerHTML = text.problem + ' ' + arrowSvg;
+    if (finalBtn) finalBtn.innerHTML = text.final + ' ' + arrowSvgLg;
+    if (stickyBtn) stickyBtn.textContent = text.sticky;
+}
+
+var addonAdded = false;
+
+function toggleAddonBtn() {
+    addonAdded = !addonAdded;
+    var btn = document.getElementById('addonAddBtn');
+    var box = document.getElementById('addonBox');
+    var added = document.getElementById('addonAdded');
+    
+    if (addonAdded) {
+        btn.classList.add('added');
+        btn.innerHTML = '<span class="addon-add-icon">✓</span><span>Matcha Melt Added</span>';
+        box.classList.add('selected');
+        added.style.display = 'block';
+        updateAllCheckoutLinks(true);
+    } else {
+        btn.classList.remove('added');
+        btn.innerHTML = '<span class="addon-add-icon">+</span><span>Add Matcha Melt — +$30</span>';
+        box.classList.remove('selected');
+        added.style.display = 'none';
+        updateAllCheckoutLinks(false);
+    }
+}
+
+function removeAddon() {
+    addonAdded = true;
+    toggleAddonBtn();
+}
+
+// Initialize all links on page load
+document.addEventListener('DOMContentLoaded', function() {
+    updateAllCheckoutLinks(false);
+});
+</script>
+
+<!-- ========== 11. FAQ (At Bottom) ========== -->
+<section class="faq">
+    <div class="container">
+        <div class="sec-head"><h2>Frequently Asked Questions</h2></div>
+        <div class="faq-list">
+            <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Do I get to choose my shades?</span><span class="ico">+</span></div><div class="faq-a">The Starter Set comes with our 3 best-sellers: Hazelnut, Fallen Leaves, and Raspberry Kiss. We picked these because they're universally flattering and the easiest way to find your perfect match without the guesswork.</div></div>
+            <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>What exactly is a Multi-Colour Cream?</span><span class="ico">+</span></div><div class="faq-a">Think of it as your whole makeup bag in one tiny tin. It's a creamy, blendable balm you can use on your lips, cheeks, and eyes. Just dab it on with your fingers (or a brush if you're fancy) and you're done. Perfect for those "I have 5 minutes" mornings.</div></div>
+            <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Are the ingredients really 100% natural?</span><span class="ico">+</span></div><div class="faq-a">Yep! We're a bit obsessed with clean formulas. All our ingredients are rated safe by the EWG, and we use real fruit and plant pigments (like beetroot and bilberry) instead of synthetic dyes. No parabens, no harsh chemicals, no sketchy stuff.</div></div>
+            <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Is it safe for sensitive or acne-prone skin?</span><span class="ico">+</span></div><div class="faq-a">We made this with sensitive skin in mind. The formula is non-comedogenic (won't clog pores) and fragrance-free. That said, everyone's skin is different — so if you're extra reactive, do a quick patch test first just to be safe.</div></div>
+            <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>How long does the colour last?</span><span class="ico">+</span></div><div class="faq-a">You can expect about 4-6 hours of wear, depending on your skin type. The formula has a subtle stain effect, so even as it fades, you'll still have a hint of colour. And the tins are small enough to toss in your bag for easy touch-ups.</div></div>
+            <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Is it vegan and cruelty-free?</span><span class="ico">+</span></div><div class="faq-a">100%. No animal ingredients, never tested on animals. We're pretty firm on that one.</div></div>
+            <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>What's the shipping & satisfaction policy?</span><span class="ico">+</span></div><div class="faq-a">Free shipping is included with the Starter Set. And while we can't accept returns on opened natural products, we do have a 30-day satisfaction guarantee. If something's off, just reach out — we'll make it right.</div></div>
+            <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Can I use it around my eyes?</span><span class="ico">+</span></div><div class="faq-a">Absolutely. The formula is made with food-grade and mineral-based ingredients, so it's gentle enough for the delicate eye area. A lot of our customers use it as a quick eyeshadow.</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 12. FINAL CTA ========== -->
+<section class="final">
+    <div class="container">
+        <h2>Ready to Make the Switch?</h2>
+        <p>Join 12,000+ happy customers who've discovered makeup that's actually good for them.</p>
+        <a href="https://naturallywyld.ca/cart/46636732252417:1?discount=FREESHIPMC&checkout" class="btn-final checkout-link">Get All 3 Shades — $30 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <p class="urgency">🍁 Handmade in Okanagan, BC · ★ 4.9/5 from 436+ reviews</p>
+    </div>
+</section>
+
+<!-- STICKY MOBILE CTA -->
+<div class="mobile-sticky" id="stickyBar">
+    <div class="mobile-sticky-inner">
+        <div class="mobile-sticky-text">
+            <strong>Starter Set — $30</strong>
+            <span>★ 4.9/5 · Free Shipping</span>
+        </div>
+        <a href="https://naturallywyld.ca/cart/46636732252417:1?discount=FREESHIPMC&checkout" class="btn-sticky checkout-link">Get All 3 — $30</a>
+    </div>
+</div>
+
+<!-- ========== TRUST LOGOS ========== -->
+<section class="featured-in">
+    <div class="container">
+        <div class="featured-logos">
+            <div class="featured-logo" data-index="0">
+                <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Faire_Logo_red_5.png?v=1725220081&width=200" alt="FAIRE" loading="lazy">
+            </div>
+            <div class="featured-logo" data-index="1">
+                <img src="https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-O7rSIOfPFsbr-cm1.png?v=1718960187&width=200" alt="BC Business" loading="lazy">
+            </div>
+            <div class="featured-logo" data-index="2">
+                <img src="https://cdn.shopify.com/s/files/1/0640/4977/4849/files/Faire_Logo_red_6.png?v=1725220136&width=200" alt="Shopify" loading="lazy">
+            </div>
+            <div class="featured-logo" data-index="3">
+                <img src="https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-BWVyZx9RYdbr-cm4.png?v=1718960250&width=200" alt="Best of Kelowna" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Naturally Wyld. All rights reserved. | <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Contact</a></p>
+    </div>
+</footer>
+
+<!-- Ingredient Modal -->
+<div class="ingredient-modal" id="ingredientModal">
+    <div class="ingredient-modal-overlay" onclick="this.parentElement.classList.remove('open')"></div>
+    <div class="ingredient-modal-content">
+        <button class="modal-close" onclick="this.parentElement.parentElement.classList.remove('open')">×</button>
+        <h3>Full Ingredient List</h3>
+        <p class="modal-subtitle">Simple & Effective — Just Like Nature Intended</p>
+        <div class="ingredient-list">
+            <div class="ingredient-item"><h4>🍓 Raspberry Powder</h4><p>Adds a natural flush of colour from real fruit, while offering skin-soothing antioxidants for a healthy glow.</p></div>
+            <div class="ingredient-item"><h4>🫜 Beet Root Powder</h4><p>Provides rich, vibrant pigment from vegetables—helps tint lips and cheeks naturally without synthetic dyes.</p></div>
+            <div class="ingredient-item"><h4>🍇 Bilberry Extract</h4><p>A fruit-derived antioxidant that helps protect skin and adds a subtle, naturally flattering hue.</p></div>
+            <div class="ingredient-item"><h4>🌰 Shea Butter</h4><p>Deeply nourishing butter that softens skin, soothes dryness, and gives your skin a dewy, plump finish.</p></div>
+            <div class="ingredient-item"><h4>🥥 Coconut Oil</h4><p>Lightweight hydration that melts into skin, supporting smooth application and conditioning benefits.</p></div>
+            <div class="ingredient-item"><h4>🌿 Jojoba Oil</h4><p>Mimics your skin's natural oils, balancing moisture while helping the tint absorb evenly and last longer.</p></div>
+            <div class="ingredient-item"><h4>🫒 Olive Squalane</h4><p>A luxurious, skin-identical hydrator that gives a silky feel, reduces fine lines, and adds a natural glow.</p></div>
+            <div class="ingredient-item"><h4>🌟 Vitamin E</h4><p>A powerful antioxidant that helps protect your skin and extend the shelf life of natural oils.</p></div>
+            <div class="ingredient-item"><h4>💦 Hyaluronic Acid</h4><p>Binds moisture to the skin, leaving your lips and cheeks plump, hydrated, and never cakey.</p></div>
+            <div class="ingredient-item"><h4>🍵 Green Tea Extract</h4><p>Rich in antioxidants, helps soothe irritated skin and calm redness—perfect for sensitive skin types.</p></div>
+            <div class="ingredient-item"><h4>Myrica Berry Wax</h4><p>Natural plant-based wax that provides structure and helps the cream maintain its smooth, creamy texture.</p></div>
+            <div class="ingredient-item"><h4>🌵 Candelilla Wax</h4><p>Vegan wax from the candelilla plant that creates a protective barrier and gives long-lasting wear.</p></div>
+            <div class="ingredient-item"><h4>Castor Oil</h4><p>Deeply conditioning oil that creates smooth application and helps colours stay vibrant longer.</p></div>
+            <div class="ingredient-item"><h4>Cetearyl (from coconuts)</h4><p>Coconut-derived emulsifier that helps blend ingredients smoothly and provides silky skin feel.</p></div>
+            <div class="ingredient-item"><h4>Vitamin A</h4><p>Supports healthy skin renewal and helps maintain a youthful, radiant complexion.</p></div>
+            <div class="ingredient-item"><h4>🎋 Bamboo Silica</h4><p>Natural mineral that provides a smooth, refined texture and helps with even colour distribution.</p></div>
+            <div class="ingredient-item"><h4>Xanthan Gum</h4><p>Natural thickener derived from plants that creates the perfect creamy consistency.</p></div>
+            <div class="ingredient-item"><h4>Gum Arabic</h4><p>Tree-derived gum that helps bind ingredients and creates smooth, even application.</p></div>
+            <div class="ingredient-item"><h4>Isoamyl Laureate</h4><p>Plant-derived conditioning agent that provides silky texture and enhanced spreadability.</p></div>
+            <div class="ingredient-item"><h4>Oxides</h4><p>Natural mineral pigments that provide safe, long-lasting colour without synthetic dyes.</p></div>
+            <div class="ingredient-item"><h4>Micas</h4><p>Natural minerals that add subtle shimmer and luminosity for a healthy, radiant glow.</p></div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Sticky CTA on scroll (mobile only) - hides at footer
+(function(){
+    var sticky = document.getElementById('stickyBar');
+    var footer = document.querySelector('footer');
+    var shown = false;
+    
+    window.addEventListener('scroll', function(){
+        if(window.innerWidth <= 600){
+            var footerTop = footer.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+            
+            // Show after scrolling 400px, hide when footer is visible
+            if(window.scrollY > 400 && footerTop > windowHeight){
+                if(!shown){
+                    sticky.classList.add('show');
+                    shown = true;
+                }
+            } else {
+                if(shown){
+                    sticky.classList.remove('show');
+                    shown = false;
+                }
+            }
+        }
+    });
+})();
+
+// Simple video autoplay when in view
+(function(){
+    var videos = document.querySelectorAll('.collage-video video');
+    if(!videos.length) return;
+    
+    var observer = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+            var video = entry.target;
+            if(entry.isIntersecting){
+                video.play().catch(function(e){
+                    // Handle autoplay restrictions gracefully
+                    console.log('Autoplay prevented:', e);
+                });
+            } else {
+                video.pause();
+            }
+        });
+    }, {threshold: 0.3});
+    
+    videos.forEach(function(video){
+        observer.observe(video);
+    });
+})();
+
+// Review Carousel (mobile)
+(function(){
+    var carousel = document.querySelector('.rev-carousel');
+    if(!carousel) return;
+    
+    var cards = carousel.querySelectorAll('.rev-carousel-track .rev-card');
+    var dots = carousel.querySelectorAll('.rev-dot');
+    var prevBtn = carousel.querySelector('.rev-prev');
+    var nextBtn = carousel.querySelector('.rev-next');
+    var currentIndex = 0;
+    var autoRotateInterval;
+    var isPaused = false;
+    
+    function showSlide(index){
+        cards.forEach(function(card, i){
+            card.classList.remove('active');
+            if(i === index) card.classList.add('active');
+        });
+        dots.forEach(function(dot, i){
+            dot.classList.remove('active');
+            if(i === index) dot.classList.add('active');
+        });
+        currentIndex = index;
+    }
+    
+    function nextSlide(){
+        var next = (currentIndex + 1) % cards.length;
+        showSlide(next);
+    }
+    
+    function prevSlide(){
+        var prev = (currentIndex - 1 + cards.length) % cards.length;
+        showSlide(prev);
+    }
+    
+    function startAutoRotate(){
+        if(isPaused) return;
+        autoRotateInterval = setInterval(nextSlide, 3500);
+    }
+    
+    function stopAutoRotate(){
+        clearInterval(autoRotateInterval);
+        isPaused = true;
+    }
+    
+    // Initialize first slide
+    showSlide(0);
+    startAutoRotate();
+    
+    // Navigation clicks - stop auto-rotate permanently
+    prevBtn.addEventListener('click', function(){
+        stopAutoRotate();
+        prevSlide();
+    });
+    
+    nextBtn.addEventListener('click', function(){
+        stopAutoRotate();
+        nextSlide();
+    });
+    
+    dots.forEach(function(dot, i){
+        dot.addEventListener('click', function(){
+            stopAutoRotate();
+            showSlide(i);
+        });
+    });
+    
+    // Touch/tap on card stops rotation
+    carousel.addEventListener('touchstart', function(){
+        stopAutoRotate();
+    });
+})();
+
+// Featured In Logo Rotation (mobile only - 2 at a time)
+(function(){
+    if(window.innerWidth > 600) {
+        // Desktop: show all logos
+        document.querySelectorAll('.featured-logo').forEach(function(logo){
+            logo.classList.add('active');
+        });
+        return;
+    }
+    
+    var logos = document.querySelectorAll('.featured-logo');
+    if(logos.length < 2) return;
+    
+    var currentPair = 0;
+    var totalPairs = Math.ceil(logos.length / 2);
+    
+    function showPair(pairIndex){
+        logos.forEach(function(logo, i){
+            logo.classList.remove('active');
+        });
+        
+        var startIndex = pairIndex * 2;
+        if(logos[startIndex]) logos[startIndex].classList.add('active');
+        if(logos[startIndex + 1]) logos[startIndex + 1].classList.add('active');
+    }
+    
+    function nextPair(){
+        currentPair = (currentPair + 1) % totalPairs;
+        showPair(currentPair);
+    }
+    
+    // Initialize first pair
+    showPair(0);
+    
+    // Auto-rotate every 4 seconds
+    setInterval(nextPair, 4000);
+    
+    // Handle resize
+    window.addEventListener('resize', function(){
+        if(window.innerWidth > 600){
+            logos.forEach(function(logo){
+                logo.classList.add('active');
+            });
+        }
+    });
+})();
+
+// Font loading detection
+if('fonts' in document){
+    Promise.all([
+        document.fonts.load('500 1em Poppins'),
+        document.fonts.load('600 1em Playfair Display')
+    ]).then(function(){
+        document.body.classList.add('fonts-loaded');
+    });
+}
+</script>
+</body>
+</html>
